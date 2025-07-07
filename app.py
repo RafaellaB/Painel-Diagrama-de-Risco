@@ -1,4 +1,4 @@
-# app.py
+# app.py (Versão Final com Cálculo de Maré por Intervalo e Junção Corrigida)
 
 import streamlit as st
 import pandas as pd
@@ -17,6 +17,9 @@ st.set_page_config(
     page_icon="🌊"
 )
 
+# ==============================================================================
+# FUNÇÕES DE PROCESSAMENTO
+# ==============================================================================
 
 @st.cache_data
 def carregar_dados_brutos():
@@ -36,21 +39,26 @@ def carregar_dados_brutos():
     return df_chuva, df_mare
 
 def executar_analise(df_chuva, df_mare, datas_desejadas, estacoes_desejadas):
-    """Executa todo o pipeline de análise e retorna o DataFrame final."""
-    df_filtrado = df_chuva[df_chuva['nomeEstacao'].isin(estacoes_desejadas)].copy()
-    df_filtrado['data'] = df_filtrado['datahora'].dt.date.astype(str)
-    df_filtrado = df_filtrado[df_filtrado['data'].isin(datas_desejadas)]
+    """
+    Executa o pipeline de análise com o cálculo de AM dinâmico
+    para cada intervalo de maré.
+    """
+    #PROCESSAMENTO DA CHUVA ---
+    print("--- Etapa 1: Processando dados de CHUVA ---")
+    df_filtrado_chuva = df_chuva[df_chuva['nomeEstacao'].isin(estacoes_desejadas)].copy()
+    df_filtrado_chuva['data'] = df_filtrado_chuva['datahora'].dt.date.astype(str)
+    df_filtrado_chuva = df_filtrado_chuva[df_filtrado_chuva['data'].isin(datas_desejadas)]
 
-    if df_filtrado.empty:
+    if df_filtrado_chuva.empty:
         return pd.DataFrame()
 
     horas_do_dia = range(24)
     horas_do_dia_str = [f"{h:02d}:00:00" for h in horas_do_dia]
     
     resultados_2h = []
-    df_filtrado.loc[:, 'hora_numerica'] = df_filtrado['datahora'].dt.hour
+    df_filtrado_chuva.loc[:, 'hora_numerica'] = df_filtrado_chuva['datahora'].dt.hour
     for hora in horas_do_dia:
-        df_janela = df_filtrado[(df_filtrado['hora_numerica'] >= hora - 1) & (df_filtrado['hora_numerica'] < hora + 1)].copy()
+        df_janela = df_filtrado_chuva[(df_filtrado_chuva['hora_numerica'] >= hora - 1) & (df_filtrado_chuva['hora_numerica'] < hora + 1)].copy()
         df_janela['janela'] = f"{hora:02d}:00:00"
         agrupado = df_janela.groupby(['nomeEstacao', 'data', 'janela'])['valorMedida'].sum().reset_index()
         resultados_2h.append(agrupado)
@@ -61,7 +69,7 @@ def executar_analise(df_chuva, df_mare, datas_desejadas, estacoes_desejadas):
         for hora_str in horas_do_dia_str:
             alvo = pd.to_datetime(f'{data_str} {hora_str}')
             inicio_intervalo = alvo - pd.Timedelta(minutes=10)
-            df_intervalo = df_filtrado[(df_filtrado['datahora'] >= inicio_intervalo) & (df_filtrado['datahora'] < alvo)]
+            df_intervalo = df_filtrado_chuva[(df_filtrado_chuva['datahora'] >= inicio_intervalo) & (df_filtrado_chuva['datahora'] < alvo)]
             soma = df_intervalo.groupby('nomeEstacao')['valorMedida'].sum().reset_index()
             soma['data'] = data_str
             soma['hora_alvo'] = hora_str
@@ -71,24 +79,51 @@ def executar_analise(df_chuva, df_mare, datas_desejadas, estacoes_desejadas):
     df_vp = pd.merge(df_v10min, df_v2horas, on=['data', 'hora_ref', 'nomeEstacao'], how='outer')
     df_vp[['chuva_10min', 'chuva_2h']] = df_vp[['chuva_10min', 'chuva_2h']].fillna(0)
     df_vp['VP'] = (df_vp['chuva_10min'] / (10/60)) + df_vp['chuva_2h']
+    df_vp['datahora'] = pd.to_datetime(df_vp['data'] + ' ' + df_vp['hora_ref'])
+    print("Dados de chuva processados.")
 
-    # --- PROCESSAMENTO DA MARÉ ---
-    df_mare['data'] = pd.to_datetime(df_mare['data'], format='%d/%m/%Y').dt.strftime('%Y-%m-%d')
-    dados_filtrados_mare = df_mare[df_mare['data'].isin(datas_desejadas)]
-    resultados_am = []
-    for data, grupo in dados_filtrados_mare.groupby('data'):
-        alturas = grupo['altura'].tolist()
-        if len(alturas) >= 2:
-           
-            I1 = max(alturas)
-            I2 = min(alturas)
-            # --- FIM DA CORREÇÃO ---
-            AM = round(((I1 - I2) / 6) + I1, 2)
-            resultados_am.append({'data': data, 'AM': AM})
-    df_am = pd.DataFrame(resultados_am)
- 
-    # --- JUNÇÃO E ANÁLISE FINAL ---
-    df_final = pd.merge(df_vp, df_am, on='data', how='left')
+    # PROCESSAMENTO DA MARÉ POR INTERVALO 
+    print("\n--- Etapa 2: Processando dados da MARÉ por intervalo ---")
+    df_mare['data_str'] = pd.to_datetime(df_mare['data'], format='%d/%m/%Y').dt.strftime('%Y-%m-%d')
+    df_mare['datahora'] = pd.to_datetime(df_mare['data_str'] + ' ' + df_mare['hora'])
+    dados_filtrados_mare = df_mare[df_mare['data_str'].isin(datas_desejadas)].copy()
+    dados_filtrados_mare.sort_values(by='datahora', inplace=True)
+    
+    intervalos_am = []
+    for data, grupo_dia in dados_filtrados_mare.groupby('data_str'):
+        for i in range(len(grupo_dia) - 1):
+            ponto_atual = grupo_dia.iloc[i]
+            ponto_seguinte = grupo_dia.iloc[i+1]
+            I1 = ponto_atual['altura']
+            I2 = ponto_seguinte['altura']
+            AM_intervalo = round(((I1 - I2) / 6) + I1, 2)
+            intervalos_am.append({
+                'datahora_inicio': ponto_atual['datahora'],
+                'datahora_fim': ponto_seguinte['datahora'],
+                'data': data,
+                'AM': AM_intervalo
+            })
+    df_am_intervalos = pd.DataFrame(intervalos_am)
+    print("Dados de maré por intervalo calculados.")
+
+    
+    print("\n--- Etapa 3: Unindo dados de chuva e maré (Método Explícito) ---")
+    df_vp['AM'] = np.nan # Cria a coluna de AM vazia no DataFrame de chuva
+    
+    # Para cada intervalo de maré calculado, seleciona as linhas de chuva que caem dentro desse intervalo
+    for _, intervalo in df_am_intervalos.iterrows():
+        inicio = intervalo['datahora_inicio']
+        fim = intervalo['datahora_fim']
+        # Seleciona todas as linhas de chuva que caem dentro deste intervalo de tempo
+        indices = df_vp[(df_vp['datahora'] >= inicio) & (df_vp['datahora'] < fim)].index
+        # Atribui o valor de AM do intervalo a todas essas linhas de chuva
+        df_vp.loc[indices, 'AM'] = intervalo['AM']
+    
+    df_final = df_vp.copy()
+    print("Junção de dados concluída.")
+
+    # --- ANÁLISE DE RISCO ---
+    df_final.dropna(subset=['AM'], inplace=True) 
     df_final['VP'] = df_final['VP'].round(2)
     df_final['AM'] = df_final['AM'].round(2)
     df_final['Nivel_Risco_Valor'] = (df_final['VP'] * df_final['AM']).fillna(0).round(2)
@@ -100,8 +135,8 @@ def executar_analise(df_chuva, df_mare, datas_desejadas, estacoes_desejadas):
 
 def gerar_diagramas(df_analisado):
     """
-    Gera os diagramas interativos com uma legenda nativa customizada
-    para os níveis de risco, com amostras de cor.
+    Gera os diagramas interativos com uma legenda nativa customizada e
+    chaves únicas para garantir a estabilidade no Streamlit.
     """
     # Dicionário que mapeia a classificação para uma cor
     mapa_de_cores = {'Alto': '#D32F2F', 'Moderado Alto': '#FFA500', 'Moderado': '#FFC107', 'Baixo': '#4CAF50'}
@@ -124,8 +159,7 @@ def gerar_diagramas(df_analisado):
         # Configuração do gráfico (fundo, limites, etc.)
         lim_x = max(110, grupo['VP'].max() * 1.2) if not grupo.empty else 110
         lim_y = 5
-        x_grid = np.arange(0, lim_x, 1)
-        y_grid = np.linspace(0, lim_y, 100)
+        x_grid, y_grid = np.arange(0, lim_x, 1), np.linspace(0, lim_y, 100)
         z_grid = np.array([x * y for y in y_grid for x in x_grid]).reshape(len(y_grid), len(x_grid))
         colorscale = [[0, "#90EE90"], [30/100, "#FFD700"], [50/100, "#FFA500"], [1.0, "#D32F2F"]]
         fig.add_trace(go.Heatmap(x=x_grid, y=y_grid, z=z_grid, colorscale=colorscale, showscale=False, zmin=0, zmax=100))
@@ -146,9 +180,6 @@ def gerar_diagramas(df_analisado):
             ))
 
         
-        
-        # Adiciona "pontos fantasma" (sem dados visíveis) apenas para criar a legenda
-        
         for risco, definicao in definicoes_risco.items():
             fig.add_trace(go.Scatter(
                 x=[None], y=[None], # Não plota nenhum ponto no gráfico
@@ -156,8 +187,7 @@ def gerar_diagramas(df_analisado):
                 marker=dict(color=mapa_de_cores[risco], size=10, symbol='square'),
                 name=f"<b>{risco}</b>: {definicao}" # Este texto aparecerá na legenda
             ))
-            
-      
+        
 
         # Atualiza o layout final do gráfico
         fig.update_layout(
@@ -169,13 +199,17 @@ def gerar_diagramas(df_analisado):
             legend_title_text='<b>Níveis de Risco</b>'
         )
         
-        st.plotly_chart(fig, use_container_width=True)
+        
+        # Chave única para cada gráfico combinando a data e a estação
+        chave_unica = f"chart_{data}_{estacao}"
+        st.plotly_chart(fig, use_container_width=True, key=chave_unica)
+        
 
 # ==============================================================================
 # INTERFACE DO STREAMLIT
 # ==============================================================================
 
-st.title("Análise de Risco (Volume de Chuva x Altura da Maré)")
+st.title("Painel de Análise de Risco - Chuva vs. Maré")
 
 DATAS_FIXAS = pd.date_range(start='2025-05-14', end='2025-05-21').strftime('%Y-%m-%d').tolist()
 st.info(f"Análise configurada para o período fixo de {DATAS_FIXAS[0]} a {DATAS_FIXAS[-1]}.")
