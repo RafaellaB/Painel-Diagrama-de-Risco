@@ -175,7 +175,7 @@ def gerar_diagramas(df_analisado):
             zmax=100,
             hoverinfo='none' # <--- ESTA É A ALTERAÇÃO
         ))
-        # --- FIM DA MUDANÇA ---
+       
         
         # Plota a linha da trajetória
         grupo = grupo.sort_values(by='hora_ref')
