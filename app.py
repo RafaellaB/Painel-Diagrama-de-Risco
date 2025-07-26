@@ -13,9 +13,8 @@ import datetime
 # ==============================================================================
 st.set_page_config(
     layout="wide",
-    page_title="Análise de Risco (Volume de Chuva x Altura da Maré)",
-    page_icon="🌊"
-)
+    page_title="Diagramas de Risco para Alagamentos e Inundações")
+    
 
 # ==============================================================================
 # FUNÇÕES DE PROCESSAMENTO
@@ -164,6 +163,20 @@ def gerar_diagramas(df_analisado):
         colorscale = [[0, "#90EE90"], [30/100, "#FFD700"], [50/100, "#FFA500"], [1.0, "#D32F2F"]]
         fig.add_trace(go.Heatmap(x=x_grid, y=y_grid, z=z_grid, colorscale=colorscale, showscale=False, zmin=0, zmax=100))
         
+        # --- MUDANÇA APLICADA AQUI ---
+        # Adicionado o parâmetro 'hoverinfo='none'' para desativar a caixa de texto do fundo.
+        fig.add_trace(go.Heatmap(
+            x=x_grid, 
+            y=y_grid, 
+            z=z_grid, 
+            colorscale=colorscale, 
+            showscale=False, 
+            zmin=0, 
+            zmax=100,
+            hoverinfo='none' # <--- ESTA É A ALTERAÇÃO
+        ))
+        # --- FIM DA MUDANÇA ---
+        
         # Plota a linha da trajetória
         grupo = grupo.sort_values(by='hora_ref')
         fig.add_trace(go.Scatter(x=grupo['VP'], y=grupo['AM'], mode='lines', line=dict(color='black', width=1.5, dash='dash'), hoverinfo='none', showlegend=False))
@@ -192,8 +205,8 @@ def gerar_diagramas(df_analisado):
         # Atualiza o layout final do gráfico
         fig.update_layout(
             title=f'<b>{estacao}</b>',
-            xaxis_title='Precipitação (mm)',
-            yaxis_title='Altura da Maré (m)',
+            xaxis_title='Índice de Precipitação (mm)',
+            yaxis_title='índice de Altura da Maré (m)',
             margin=dict(l=40, r=40, t=40, b=40),
             showlegend=True, # Liga a legenda para que os itens apareçam
             legend_title_text='<b>Níveis de Risco</b>'
@@ -209,10 +222,10 @@ def gerar_diagramas(df_analisado):
 # INTERFACE DO STREAMLIT
 # ==============================================================================
 
-st.title("Painel de Análise de Risco - Chuva vs. Maré")
+st.title("Diagramas de Risco para Alagamentos e Inundações")
 
 DATAS_FIXAS = pd.date_range(start='2025-05-14', end='2025-05-21').strftime('%Y-%m-%d').tolist()
-st.info(f"Análise configurada para o período fixo de {DATAS_FIXAS[0]} a {DATAS_FIXAS[-1]}.")
+#st.info(f"Período fixo de 14/05/2025 a 21/05/2025.")
 
 df_chuva_raw, df_mare_raw = carregar_dados_brutos()
 
@@ -242,5 +255,6 @@ else:
                     with st.expander(f"Pontos na Zona de Risco '{zona}': {len(pontos_na_zona)} ponto(s)"):
                         if not pontos_na_zona.empty:
                             st.dataframe(pontos_na_zona[['data', 'hora_ref', 'nomeEstacao', 'Nivel_Risco_Valor', 'VP', 'AM']])
+ 
 
                 gerar_diagramas(dados_analisados)
