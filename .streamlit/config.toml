@@ -3,13 +3,13 @@
 [theme]
 
 # Cor principal para elementos interativos
-primaryColor="#F63366"
+primaryColor="#4F8BF9"
 
 # Cor de fundo principal da aplicação (Branco)
 backgroundColor="#FFFFFF"
 
 # Cor de fundo de elementos secundários (como a barra lateral)
-secondaryBackgroundColor="#F0F2F6"
+secondaryBackgroundColor=""#cee8faff""
 
 # Cor do texto principal (Preto)
 textColor="#262730"
