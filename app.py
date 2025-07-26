@@ -163,7 +163,7 @@ def gerar_diagramas(df_analisado):
         colorscale = [[0, "#90EE90"], [30/100, "#FFD700"], [50/100, "#FFA500"], [1.0, "#D32F2F"]]
         fig.add_trace(go.Heatmap(x=x_grid, y=y_grid, z=z_grid, colorscale=colorscale, showscale=False, zmin=0, zmax=100))
         
-        # --- MUDANÇA APLICADA AQUI ---
+        
         # Adicionado o parâmetro 'hoverinfo='none'' para desativar a caixa de texto do fundo.
         fig.add_trace(go.Heatmap(
             x=x_grid, 
@@ -173,9 +173,9 @@ def gerar_diagramas(df_analisado):
             showscale=False, 
             zmin=0, 
             zmax=100,
-            hoverinfo='none' # <--- ESTA É A ALTERAÇÃO
+            hoverinfo='none' 
         ))
-        # --- FIM DA MUDANÇA ---
+        
         
         # Plota a linha da trajetória
         grupo = grupo.sort_values(by='hora_ref')
