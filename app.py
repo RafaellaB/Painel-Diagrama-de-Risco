@@ -61,7 +61,7 @@ st.title("Diagramas de Risco para Alagamentos")
 @st.cache_data
 def carregar_dados():
     # URL para o arquivo "raw" no GitHub
-    url = 'https://raw.githubusercontent.com/RafaellaB/Painel-Diagrama-de-Risco/main/risco_final_calculado.csv'
+    url = 'https://raw.githubusercontent.com/RafaellaB/Painel-Diagrama-de-Risco/main/resultado_risco_final.csv'
     
     # Lê o arquivo CSV diretamente da URL
     df = pd.read_csv(url) 
