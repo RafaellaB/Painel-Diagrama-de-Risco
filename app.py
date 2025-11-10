@@ -58,7 +58,7 @@ st.title("Diagramas de Risco para Alagamentos")
 # ==============================================================================
 # FUNÇÃO DE CARREGAMENTO DE DADOS (MODIFICADA)
 # ==============================================================================
-@st.cache_data
+@st.cache_data(ttl=86400)
 def carregar_dados():
     # URL para o arquivo "raw" no GitHub
     url = 'https://raw.githubusercontent.com/RafaellaB/Painel-Diagrama-de-Risco/main/resultado_risco_final.csv'
