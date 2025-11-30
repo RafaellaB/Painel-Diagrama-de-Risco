@@ -31988,3 +31988,69 @@ data,hora_ref,nomeEstacao,VP,AM,Nivel_Risco_Valor,Classificacao_Risco
 2025-11-28,20:00:00,Torreão,2.39,1.55,3.7,Baixo
 2025-11-28,21:00:00,Torreão,1.19,1.72,2.05,Baixo
 2025-11-28,22:00:00,Torreão,1.19,1.9,2.26,Baixo
+2025-11-29,00:00:00,Campina do Barreto,1.4,1.55,2.17,Baixo
+2025-11-29,01:00:00,Campina do Barreto,0.2,1.37,0.27,Baixo
+2025-11-29,02:00:00,Campina do Barreto,0.2,1.19,0.24,Baixo
+2025-11-29,03:00:00,Campina do Barreto,0.0,1.01,0.0,Baixo
+2025-11-29,04:00:00,Campina do Barreto,0.0,0.84,0.0,Baixo
+2025-11-29,05:00:00,Campina do Barreto,0.0,0.66,0.0,Baixo
+2025-11-29,06:00:00,Campina do Barreto,0.0,0.85,0.0,Baixo
+2025-11-29,07:00:00,Campina do Barreto,0.0,1.04,0.0,Baixo
+2025-11-29,08:00:00,Campina do Barreto,0.0,1.23,0.0,Baixo
+2025-11-29,09:00:00,Campina do Barreto,0.0,1.43,0.0,Baixo
+2025-11-29,10:00:00,Campina do Barreto,0.0,1.62,0.0,Baixo
+2025-11-29,11:00:00,Campina do Barreto,0.0,1.81,0.0,Baixo
+2025-11-29,12:00:00,Campina do Barreto,0.0,1.63,0.0,Baixo
+2025-11-29,13:00:00,Campina do Barreto,0.0,1.45,0.0,Baixo
+2025-11-29,14:00:00,Campina do Barreto,0.0,1.27,0.0,Baixo
+2025-11-29,15:00:00,Campina do Barreto,0.0,1.1,0.0,Baixo
+2025-11-29,16:00:00,Campina do Barreto,0.0,0.92,0.0,Baixo
+2025-11-29,17:00:00,Campina do Barreto,0.0,0.74,0.0,Baixo
+2025-11-29,18:00:00,Campina do Barreto,0.0,0.95,0.0,Baixo
+2025-11-29,19:00:00,Campina do Barreto,0.0,1.16,0.0,Baixo
+2025-11-29,20:00:00,Campina do Barreto,0.0,1.36,0.0,Baixo
+2025-11-29,21:00:00,Campina do Barreto,0.0,1.57,0.0,Baixo
+2025-11-29,00:00:00,Imbiribeira,0.0,1.55,0.0,Baixo
+2025-11-29,01:00:00,Imbiribeira,0.0,1.37,0.0,Baixo
+2025-11-29,02:00:00,Imbiribeira,0.0,1.19,0.0,Baixo
+2025-11-29,03:00:00,Imbiribeira,0.0,1.01,0.0,Baixo
+2025-11-29,04:00:00,Imbiribeira,0.0,0.84,0.0,Baixo
+2025-11-29,05:00:00,Imbiribeira,0.0,0.66,0.0,Baixo
+2025-11-29,06:00:00,Imbiribeira,0.0,0.85,0.0,Baixo
+2025-11-29,07:00:00,Imbiribeira,0.0,1.04,0.0,Baixo
+2025-11-29,08:00:00,Imbiribeira,0.0,1.23,0.0,Baixo
+2025-11-29,09:00:00,Imbiribeira,0.0,1.43,0.0,Baixo
+2025-11-29,10:00:00,Imbiribeira,0.0,1.62,0.0,Baixo
+2025-11-29,11:00:00,Imbiribeira,0.0,1.81,0.0,Baixo
+2025-11-29,12:00:00,Imbiribeira,0.0,1.63,0.0,Baixo
+2025-11-29,13:00:00,Imbiribeira,0.0,1.45,0.0,Baixo
+2025-11-29,14:00:00,Imbiribeira,0.0,1.27,0.0,Baixo
+2025-11-29,15:00:00,Imbiribeira,0.0,1.1,0.0,Baixo
+2025-11-29,16:00:00,Imbiribeira,0.0,0.92,0.0,Baixo
+2025-11-29,17:00:00,Imbiribeira,0.0,0.74,0.0,Baixo
+2025-11-29,18:00:00,Imbiribeira,0.0,0.95,0.0,Baixo
+2025-11-29,19:00:00,Imbiribeira,0.0,1.16,0.0,Baixo
+2025-11-29,20:00:00,Imbiribeira,0.0,1.36,0.0,Baixo
+2025-11-29,00:00:00,Torreão,0.0,1.55,0.0,Baixo
+2025-11-29,01:00:00,Torreão,0.0,1.37,0.0,Baixo
+2025-11-29,02:00:00,Torreão,0.0,1.19,0.0,Baixo
+2025-11-29,03:00:00,Torreão,0.0,1.01,0.0,Baixo
+2025-11-29,04:00:00,Torreão,0.0,0.84,0.0,Baixo
+2025-11-29,05:00:00,Torreão,0.0,0.66,0.0,Baixo
+2025-11-29,06:00:00,Torreão,0.0,0.85,0.0,Baixo
+2025-11-29,07:00:00,Torreão,0.0,1.04,0.0,Baixo
+2025-11-29,08:00:00,Torreão,0.0,1.23,0.0,Baixo
+2025-11-29,09:00:00,Torreão,0.0,1.43,0.0,Baixo
+2025-11-29,10:00:00,Torreão,0.0,1.62,0.0,Baixo
+2025-11-29,11:00:00,Torreão,0.0,1.81,0.0,Baixo
+2025-11-29,12:00:00,Torreão,0.0,1.63,0.0,Baixo
+2025-11-29,13:00:00,Torreão,0.0,1.45,0.0,Baixo
+2025-11-29,14:00:00,Torreão,0.0,1.27,0.0,Baixo
+2025-11-29,15:00:00,Torreão,0.0,1.1,0.0,Baixo
+2025-11-29,16:00:00,Torreão,0.0,0.92,0.0,Baixo
+2025-11-29,17:00:00,Torreão,0.0,0.74,0.0,Baixo
+2025-11-29,18:00:00,Torreão,0.0,0.95,0.0,Baixo
+2025-11-29,19:00:00,Torreão,0.0,1.16,0.0,Baixo
+2025-11-29,20:00:00,Torreão,0.0,1.36,0.0,Baixo
+2025-11-29,21:00:00,Torreão,0.0,1.57,0.0,Baixo
+2025-11-29,22:00:00,Torreão,0.0,1.78,0.0,Baixo
