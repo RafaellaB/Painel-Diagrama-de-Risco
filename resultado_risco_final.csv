@@ -32229,3 +32229,73 @@ data,hora_ref,nomeEstacao,VP,AM,Nivel_Risco_Valor,Classificacao_Risco
 2025-12-02,21:00:00,Torreão,0.0,0.62,0.0,Baixo
 2025-12-02,22:00:00,Torreão,0.0,0.96,0.0,Baixo
 2025-12-02,23:00:00,Torreão,0.0,1.31,0.0,Baixo
+2025-12-03,07:00:00,Campina do Barreto,1.4,0.63,0.88,Baixo
+2025-12-03,08:00:00,Campina do Barreto,13.84,0.29,4.01,Baixo
+2025-12-03,09:00:00,Campina do Barreto,10.31,0.63,6.5,Baixo
+2025-12-03,10:00:00,Campina do Barreto,0.0,0.97,0.0,Baixo
+2025-12-03,11:00:00,Campina do Barreto,0.0,1.32,0.0,Baixo
+2025-12-03,12:00:00,Campina do Barreto,0.0,1.66,0.0,Baixo
+2025-12-03,13:00:00,Campina do Barreto,0.0,2.0,0.0,Baixo
+2025-12-03,14:00:00,Campina do Barreto,0.0,2.34,0.0,Baixo
+2025-12-03,15:00:00,Campina do Barreto,0.0,2.03,0.0,Baixo
+2025-12-03,16:00:00,Campina do Barreto,0.0,1.71,0.0,Baixo
+2025-12-03,17:00:00,Campina do Barreto,0.0,1.4,0.0,Baixo
+2025-12-03,18:00:00,Campina do Barreto,0.0,1.08,0.0,Baixo
+2025-12-03,19:00:00,Campina do Barreto,0.0,0.77,0.0,Baixo
+2025-12-03,20:00:00,Campina do Barreto,0.0,0.45,0.0,Baixo
+2025-12-03,21:00:00,Campina do Barreto,0.0,0.14,0.0,Baixo
+2025-12-03,22:00:00,Campina do Barreto,0.0,0.52,0.0,Baixo
+2025-12-03,00:00:00,Imbiribeira,0.0,1.66,0.0,Baixo
+2025-12-03,01:00:00,Imbiribeira,0.0,2.0,0.0,Baixo
+2025-12-03,02:00:00,Imbiribeira,0.0,2.35,0.0,Baixo
+2025-12-03,03:00:00,Imbiribeira,0.0,2.01,0.0,Baixo
+2025-12-03,04:00:00,Imbiribeira,0.0,1.66,0.0,Baixo
+2025-12-03,05:00:00,Imbiribeira,0.0,1.32,0.0,Baixo
+2025-12-03,06:00:00,Imbiribeira,0.0,0.98,0.0,Baixo
+2025-12-03,07:00:00,Imbiribeira,0.0,0.63,0.0,Baixo
+2025-12-03,08:00:00,Imbiribeira,0.0,0.29,0.0,Baixo
+2025-12-03,09:00:00,Imbiribeira,0.0,0.63,0.0,Baixo
+2025-12-03,10:00:00,Imbiribeira,0.0,0.97,0.0,Baixo
+2025-12-03,11:00:00,Imbiribeira,0.0,1.32,0.0,Baixo
+2025-12-03,12:00:00,Imbiribeira,0.0,1.66,0.0,Baixo
+2025-12-03,13:00:00,Imbiribeira,0.0,2.0,0.0,Baixo
+2025-12-03,14:00:00,Imbiribeira,0.0,2.34,0.0,Baixo
+2025-12-03,15:00:00,Imbiribeira,0.0,2.03,0.0,Baixo
+2025-12-03,16:00:00,Imbiribeira,0.0,1.71,0.0,Baixo
+2025-12-03,17:00:00,Imbiribeira,0.0,1.4,0.0,Baixo
+2025-12-03,18:00:00,Imbiribeira,0.0,1.08,0.0,Baixo
+2025-12-03,19:00:00,Imbiribeira,0.0,0.77,0.0,Baixo
+2025-12-03,20:00:00,Imbiribeira,0.0,0.45,0.0,Baixo
+2025-12-03,21:00:00,Imbiribeira,0.0,0.14,0.0,Baixo
+2025-12-03,22:00:00,Imbiribeira,0.0,0.52,0.0,Baixo
+2025-12-03,17:00:00,RECIFE - APAC,0.0,1.4,0.0,Baixo
+2025-12-03,18:00:00,RECIFE - APAC,0.0,1.08,0.0,Baixo
+2025-12-03,19:00:00,RECIFE - APAC,0.0,0.77,0.0,Baixo
+2025-12-03,20:00:00,RECIFE - APAC,0.0,0.45,0.0,Baixo
+2025-12-03,21:00:00,RECIFE - APAC,0.0,0.14,0.0,Baixo
+2025-12-03,22:00:00,RECIFE - APAC,0.0,0.52,0.0,Baixo
+2025-12-03,23:00:00,RECIFE - APAC,0.0,0.9,0.0,Baixo
+2025-12-03,00:00:00,Torreão,0.0,1.66,0.0,Baixo
+2025-12-03,01:00:00,Torreão,0.0,2.0,0.0,Baixo
+2025-12-03,02:00:00,Torreão,0.0,2.35,0.0,Baixo
+2025-12-03,03:00:00,Torreão,0.0,2.01,0.0,Baixo
+2025-12-03,04:00:00,Torreão,0.0,1.66,0.0,Baixo
+2025-12-03,05:00:00,Torreão,0.0,1.32,0.0,Baixo
+2025-12-03,06:00:00,Torreão,0.0,0.98,0.0,Baixo
+2025-12-03,07:00:00,Torreão,0.0,0.63,0.0,Baixo
+2025-12-03,08:00:00,Torreão,0.0,0.29,0.0,Baixo
+2025-12-03,09:00:00,Torreão,0.0,0.63,0.0,Baixo
+2025-12-03,10:00:00,Torreão,0.0,0.97,0.0,Baixo
+2025-12-03,11:00:00,Torreão,0.0,1.32,0.0,Baixo
+2025-12-03,12:00:00,Torreão,0.0,1.66,0.0,Baixo
+2025-12-03,13:00:00,Torreão,0.0,2.0,0.0,Baixo
+2025-12-03,14:00:00,Torreão,0.0,2.34,0.0,Baixo
+2025-12-03,15:00:00,Torreão,0.0,2.03,0.0,Baixo
+2025-12-03,16:00:00,Torreão,0.0,1.71,0.0,Baixo
+2025-12-03,17:00:00,Torreão,0.0,1.4,0.0,Baixo
+2025-12-03,18:00:00,Torreão,0.0,1.08,0.0,Baixo
+2025-12-03,19:00:00,Torreão,0.0,0.77,0.0,Baixo
+2025-12-03,20:00:00,Torreão,0.0,0.45,0.0,Baixo
+2025-12-03,21:00:00,Torreão,0.0,0.14,0.0,Baixo
+2025-12-03,22:00:00,Torreão,0.0,0.52,0.0,Baixo
+2025-12-03,23:00:00,Torreão,0.0,0.9,0.0,Baixo
