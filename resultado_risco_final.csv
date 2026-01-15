@@ -34776,3 +34776,73 @@ data,hora_ref,nomeEstacao,VP,AM,Nivel_Risco_Valor,Classificacao_Risco
 2026-01-13,21:00:00,Torreão,0.0,1.11,0.0,Baixo
 2026-01-13,22:00:00,Torreão,0.0,1.27,0.0,Baixo
 2026-01-13,23:00:00,Torreão,0.0,1.42,0.0,Baixo
+2026-01-14,01:00:00,Campina do Barreto,1.4,1.73,2.42,Baixo
+2026-01-14,02:00:00,Campina do Barreto,0.2,1.58,0.32,Baixo
+2026-01-14,03:00:00,Campina do Barreto,0.0,1.43,0.0,Baixo
+2026-01-14,04:00:00,Campina do Barreto,0.0,1.27,0.0,Baixo
+2026-01-14,05:00:00,Campina do Barreto,0.0,1.12,0.0,Baixo
+2026-01-14,06:00:00,Campina do Barreto,0.0,0.97,0.0,Baixo
+2026-01-14,07:00:00,Campina do Barreto,0.0,0.82,0.0,Baixo
+2026-01-14,08:00:00,Campina do Barreto,0.0,0.99,0.0,Baixo
+2026-01-14,09:00:00,Campina do Barreto,0.0,1.16,0.0,Baixo
+2026-01-14,10:00:00,Campina do Barreto,0.0,1.33,0.0,Baixo
+2026-01-14,11:00:00,Campina do Barreto,0.0,1.49,0.0,Baixo
+2026-01-14,12:00:00,Campina do Barreto,0.0,1.66,0.0,Baixo
+2026-01-14,13:00:00,Campina do Barreto,0.0,1.83,0.0,Baixo
+2026-01-14,14:00:00,Campina do Barreto,0.0,1.67,0.0,Baixo
+2026-01-14,15:00:00,Campina do Barreto,0.0,1.51,0.0,Baixo
+2026-01-14,16:00:00,Campina do Barreto,47.62,1.35,64.29,Moderado Alto
+2026-01-14,17:00:00,Campina do Barreto,10.04,1.19,11.95,Baixo
+2026-01-14,18:00:00,Campina do Barreto,10.04,1.03,10.34,Baixo
+2026-01-14,19:00:00,Campina do Barreto,0.0,0.87,0.0,Baixo
+2026-01-14,20:00:00,Campina do Barreto,0.0,0.71,0.0,Baixo
+2026-01-14,21:00:00,Campina do Barreto,0.0,0.89,0.0,Baixo
+2026-01-14,22:00:00,Campina do Barreto,1.4,1.08,1.51,Baixo
+2026-01-14,23:00:00,Campina do Barreto,0.2,1.26,0.25,Baixo
+2026-01-14,00:00:00,Imbiribeira,5.89,1.58,9.31,Baixo
+2026-01-14,01:00:00,Imbiribeira,1.38,1.73,2.39,Baixo
+2026-01-14,02:00:00,Imbiribeira,9.04,1.58,14.28,Baixo
+2026-01-14,03:00:00,Imbiribeira,2.16,1.43,3.09,Baixo
+2026-01-14,04:00:00,Imbiribeira,0.0,1.27,0.0,Baixo
+2026-01-14,05:00:00,Imbiribeira,0.0,1.12,0.0,Baixo
+2026-01-14,06:00:00,Imbiribeira,0.0,0.97,0.0,Baixo
+2026-01-14,07:00:00,Imbiribeira,0.2,0.82,0.16,Baixo
+2026-01-14,08:00:00,Imbiribeira,0.2,0.99,0.2,Baixo
+2026-01-14,09:00:00,Imbiribeira,0.0,1.16,0.0,Baixo
+2026-01-14,10:00:00,Imbiribeira,0.0,1.33,0.0,Baixo
+2026-01-14,11:00:00,Imbiribeira,0.0,1.49,0.0,Baixo
+2026-01-14,12:00:00,Imbiribeira,0.0,1.66,0.0,Baixo
+2026-01-14,13:00:00,Imbiribeira,0.0,1.83,0.0,Baixo
+2026-01-14,14:00:00,Imbiribeira,0.0,1.67,0.0,Baixo
+2026-01-14,15:00:00,Imbiribeira,0.0,1.51,0.0,Baixo
+2026-01-14,16:00:00,Imbiribeira,0.0,1.35,0.0,Baixo
+2026-01-14,17:00:00,Imbiribeira,0.0,1.19,0.0,Baixo
+2026-01-14,18:00:00,Imbiribeira,0.0,1.03,0.0,Baixo
+2026-01-14,19:00:00,Imbiribeira,0.0,0.87,0.0,Baixo
+2026-01-14,20:00:00,Imbiribeira,0.0,0.71,0.0,Baixo
+2026-01-14,21:00:00,Imbiribeira,8.25,0.89,7.34,Baixo
+2026-01-14,22:00:00,Imbiribeira,1.77,1.08,1.91,Baixo
+2026-01-14,00:00:00,Torreão,0.0,1.58,0.0,Baixo
+2026-01-14,01:00:00,Torreão,0.0,1.73,0.0,Baixo
+2026-01-14,02:00:00,Torreão,0.0,1.58,0.0,Baixo
+2026-01-14,03:00:00,Torreão,0.0,1.43,0.0,Baixo
+2026-01-14,04:00:00,Torreão,0.0,1.27,0.0,Baixo
+2026-01-14,05:00:00,Torreão,0.0,1.12,0.0,Baixo
+2026-01-14,06:00:00,Torreão,0.0,0.97,0.0,Baixo
+2026-01-14,07:00:00,Torreão,0.0,0.82,0.0,Baixo
+2026-01-14,08:00:00,Torreão,0.0,0.99,0.0,Baixo
+2026-01-14,09:00:00,Torreão,0.0,1.16,0.0,Baixo
+2026-01-14,10:00:00,Torreão,0.0,1.33,0.0,Baixo
+2026-01-14,11:00:00,Torreão,0.0,1.49,0.0,Baixo
+2026-01-14,12:00:00,Torreão,0.0,1.66,0.0,Baixo
+2026-01-14,13:00:00,Torreão,0.0,1.83,0.0,Baixo
+2026-01-14,14:00:00,Torreão,0.0,1.67,0.0,Baixo
+2026-01-14,15:00:00,Torreão,0.0,1.51,0.0,Baixo
+2026-01-14,16:00:00,Torreão,0.0,1.35,0.0,Baixo
+2026-01-14,17:00:00,Torreão,0.0,1.19,0.0,Baixo
+2026-01-14,18:00:00,Torreão,0.0,1.03,0.0,Baixo
+2026-01-14,19:00:00,Torreão,0.0,0.87,0.0,Baixo
+2026-01-14,20:00:00,Torreão,0.0,0.71,0.0,Baixo
+2026-01-14,21:00:00,Torreão,0.0,0.89,0.0,Baixo
+2026-01-14,22:00:00,Torreão,0.0,1.08,0.0,Baixo
+2026-01-14,23:00:00,Torreão,0.0,1.26,0.0,Baixo
