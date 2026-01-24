@@ -71,7 +71,7 @@ st.set_page_config(layout="wide")
 st.title("Flood Risk Diagrams")
 
 #carregamento de dados
-@st.cache_data(ttl=86400)
+@st.cache_data(show_spinner=False, ttl=86400)
 def carregar_dados():
     #URL para o arquivo "raw" no GitHub
     url = 'https://raw.githubusercontent.com/RafaellaB/Painel-Diagrama-de-Risco/main/resultado_risco_final.csv'
@@ -116,8 +116,8 @@ try:
             else:
                 st.success(f"Analysis complete! Displaying {len(df_filtrado.groupby(['data', 'nomeEstacao']))} diagrama(s).")
                 
-                with st.expander("View Detailed Risk Table"):
-                    st.dataframe(df_filtrado)
+                #with st.expander("View Detailed Risk Table"):
+                #    st.dataframe(df_filtrado)
 
                 # Chama a função para gerar os diagramas com os dados já filtrados
                 gerar_diagramas(df_filtrado)
