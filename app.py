@@ -16,7 +16,8 @@ def gerar_diagramas(df_analisado):
     for (data, estacao), grupo in df_analisado.groupby(['data', 'nomeEstacao']):
         if grupo.empty: continue
         
-        st.subheader(f"Risk Diagram: {estacao} - {pd.to_datetime(data).strftime('%d/%m/%Y')}")
+        st.subheader(f"Risk Diagram: {estacao} - {pd.to_datetime(data).strftime('%Y-%m-%d')}")
+ 
         fig = go.Figure()
 
         lim_x = max(110, grupo['VP'].max() * 1.2 if not grupo.empty else 110)
@@ -108,7 +109,7 @@ try:
                 (df_analisado['nomeEstacao'].isin(estacoes_selecionadas))
             ]
             
-            st.header(f"Risk Analysis: {data_inicio.strftime('%d/%m/%Y')} to {data_fim.strftime('%d/%m/%Y')}")
+            st.header(f"Risk Analysis: {data_inicio.strftime('%Y-%m-%d')} to {data_fim.strftime('%Y-%m-%d')}")
 
             if df_filtrado.empty:
                 st.info("No risk points were found for the selected period and stations.")
