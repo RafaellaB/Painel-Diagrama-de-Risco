@@ -1,6 +1,4 @@
 data,hora_ref,nomeEstacao,VP,AM,Nivel_Risco_Valor,Classificacao_Risco
-2026-01-28,00:00:00,Campina do Barreto,0.0,1.74,0.0,Baixo
-2026-01-28,00:00:00,Torreão,0.0,1.74,0.0,Baixo
 2026-01-27,22:00:00,Torreão,0.0,1.61,0.0,Baixo
 2026-01-27,21:00:00,Campina do Barreto,0.0,1.43,0.0,Baixo
 2026-01-27,21:00:00,Imbiribeira,0.0,1.43,0.0,Baixo
