@@ -61,7 +61,7 @@ LANGUAGES = {
     }
 }
 
-# 2. FUNÇÃO DE CARREGAMENTO COM CORREÇÃO DE NOMES (TORREÃO/DOIS IRMÃOS)
+
 @st.cache_data(show_spinner=False, ttl=86400)
 def carregar_dados():
     url = 'https://raw.githubusercontent.com/RafaellaB/Painel-Diagrama-de-Risco/main/resultado_risco_final.csv'
@@ -115,7 +115,7 @@ def gerar_diagramas(df_analisado, t):
             cor_ponto = mapa_de_cores.get(ponto['Classificacao_Risco'], 'black')
             status_traduzido = t['riscos'].get(ponto['Classificacao_Risco'], ponto['Classificacao_Risco'])
             
-            # Balão de informação (Hover) corrigido com siglas dinâmicas
+            # Balão de informação (Hover) com siglas dinâmicas
             fig.add_trace(go.Scatter(
                 x=[ponto['VP']], y=[ponto['AM']], mode='markers', 
                 marker=dict(color=cor_ponto, size=12, line=dict(width=1, color='black')), 
