@@ -4,10 +4,10 @@ import numpy as np
 import plotly.graph_objects as go
 import datetime
 import requests
+import locale
 from io import StringIO
 
 # 1. DICIONÁRIO DE TRADUÇÃO GLOBAL
-# Configurado para alternar siglas técnicas conforme o idioma (RVI/THI vs VP/AM)
 LANGUAGES = {
     'EN': {
         'page_title': "Flood Risk Diagrams - Recife",
@@ -16,9 +16,12 @@ LANGUAGES = {
         'end_date': "Select end date",
         'select_stations': "Select Stations",
         'btn_explore': "Explore Risk Diagrams",
+        'btn_external': "Go to Risk Today",
         'error_date': "The start date cannot be later than the end date.",
         'error_station': "Please select at least one station.",
         'analysis_header': "Risk Analysis",
+        'date_format': "%Y-%m-%d",
+        'locale_str': 'en_US.UTF-8',
         'no_data': "No risk points were found for the selected period and stations.",
         'success': "Analysis complete! Displaying {} diagram(s).",
         'initial_info': "Select the filters in the sidebar and click 'Explore Risk Diagrams' to start the analysis.",
@@ -41,9 +44,12 @@ LANGUAGES = {
         'end_date': "Data de fim",
         'select_stations': "Selecionar Estações",
         'btn_explore': "Explorar Diagramas de Risco",
+        'btn_external': "Acessar Risco Hoje",
         'error_date': "A data de início não pode ser posterior à data de término.",
         'error_station': "Por favor, selecione pelo menos uma estação.",
         'analysis_header': "Análise de Risco",
+        'date_format': "%d/%m/%Y",
+        'locale_str': 'pt_BR.UTF-8',
         'no_data': "Nenhum ponto de risco encontrado para o período e estações selecionados.",
         'success': "Análise concluída! Exibindo {} diagrama(s).",
         'initial_info': "Selecione os filtros na barra lateral e clique em 'Explorar Diagramas de Risco' para começar.",
@@ -61,7 +67,6 @@ LANGUAGES = {
     }
 }
 
-
 @st.cache_data(show_spinner=False, ttl=86400)
 def carregar_dados():
     url = 'https://raw.githubusercontent.com/RafaellaB/Painel-Diagrama-de-Risco/main/resultado_risco_final.csv'
@@ -69,31 +74,25 @@ def carregar_dados():
         response = requests.get(url)
         content = response.content.decode('utf-8-sig') 
         df = pd.read_csv(StringIO(content))
-        
-        # Limpeza de caracteres especiais para evitar duplicatas erradas
         if 'nomeEstacao' in df.columns:
             df['nomeEstacao'] = df['nomeEstacao'].str.replace('TorreÃ£o', 'Torreão').str.replace('Dois IrmÃ£os', 'Dois Irmãos')
-            
         df['data'] = pd.to_datetime(df['data']).dt.date
         return df
     except Exception as e:
         st.error(f"Erro ao carregar CSV: {e}")
         return pd.DataFrame()
 
-# 3. FUNÇÃO PARA GERAR OS DIAGRAMAS (PLOTLY)
 def gerar_diagramas(df_analisado, t):
     st.header(t['chart_header'])
     mapa_de_cores = {'Alto': '#D32F2F', 'Moderado Alto': '#FFA500', 'Moderado': '#FFC107', 'Baixo': '#4CAF50'}
-    
     for (data, estacao), grupo in df_analisado.groupby(['data', 'nomeEstacao']):
         if grupo.empty: continue
+        data_formatada = pd.to_datetime(data).strftime(t['date_format'])
+        st.subheader(f"{t['diag_title']}: {estacao} - {data_formatada}")
         
-        st.subheader(f"{t['diag_title']}: {estacao} - {pd.to_datetime(data).strftime('%Y-%m-%d')}")
         fig = go.Figure()
-
         lim_x = max(110, grupo['VP'].max() * 1.2)
         lim_y = max(5, grupo['AM'].max() * 1.2)
-        
         x_grid = np.arange(0, lim_x, 1)
         y_grid = np.linspace(0, lim_y, 100)
         z_grid = np.array([x * y for y in y_grid for x in x_grid]).reshape(len(y_grid), len(x_grid))
@@ -114,8 +113,6 @@ def gerar_diagramas(df_analisado, t):
         for _, ponto in grupo.iterrows():
             cor_ponto = mapa_de_cores.get(ponto['Classificacao_Risco'], 'black')
             status_traduzido = t['riscos'].get(ponto['Classificacao_Risco'], ponto['Classificacao_Risco'])
-            
-            # Balão de informação (Hover) com siglas dinâmicas
             fig.add_trace(go.Scatter(
                 x=[ponto['VP']], y=[ponto['AM']], mode='markers', 
                 marker=dict(color=cor_ponto, size=12, line=dict(width=1, color='black')), 
@@ -123,8 +120,8 @@ def gerar_diagramas(df_analisado, t):
                 hovertext=(
                     f"<b>{t['hover_time']}:</b> {ponto['hora_ref']}<br>"
                     f"<b>{t['hover_risk']}:</b> {status_traduzido}<br>"
-                    f"<b>{t['label_rvi']}:</b> {ponto['VP']}<br>"
-                    f"<b>{t['label_thi']}:</b> {ponto['AM']}"
+                    f"<b>{t['label_rvi']}:</b> {ponto['VP']:.2f}<br>"
+                    f"<b>{t['label_thi']}:</b> {ponto['AM']:.2f}"
                 ),
                 showlegend=False
             ))
@@ -137,41 +134,51 @@ def gerar_diagramas(df_analisado, t):
             ))
         
         fig.update_layout(
-            xaxis_title=t['xaxis'], 
-            yaxis_title=t['yaxis'], 
-            showlegend=True, 
-            legend_title_text=t['legend_title'],
+            xaxis_title=t['xaxis'], yaxis_title=t['yaxis'], 
+            showlegend=True, legend_title_text=t['legend_title'],
             margin=dict(l=40, r=40, t=40, b=40)
         )
         st.plotly_chart(fig, use_container_width=True, key=f"chart_{data}_{estacao}")
 
-# --- APP PRINCIPAL ---
 def main():
     st.set_page_config(page_title="Risco Recife", layout="wide")
 
-    lang_choice = st.sidebar.radio("Language / Idioma", ["EN", "PT"], horizontal=True)
+    # --- SIDEBAR ---
+    # 1. Troca de Idioma (Topo)
+    lang_choice = st.sidebar.radio("Language / Idioma", ["EN", "PT"], horizontal=True, label_visibility="collapsed")
     t = LANGUAGES[lang_choice]
 
-    st.title(t['page_title'])
+    # Configuração de Locale
+    try:
+        locale.setlocale(locale.LC_ALL, t['locale_str'])
+    except:
+        try:
+            fallback = 'Portuguese_Brazil' if lang_choice == 'PT' else 'English_US'
+            locale.setlocale(locale.LC_ALL, fallback)
+        except:
+            pass
 
+    st.sidebar.markdown("---")
+
+    # 2. Filtros de Análise (Corpo)
     try:
         df_analisado = carregar_dados()
         if df_analisado.empty:
             return
 
-        # Restrição de calendário para os anos de interesse (2025 em diante)
+        st.sidebar.header(t['sidebar_header'])
+        
         data_minima = df_analisado['data'].min()
         data_maxima = df_analisado['data'].max()
 
-        st.sidebar.header(t['sidebar_header'])
-        
         data_inicio = st.sidebar.date_input(t['start_date'], value=data_minima, min_value=data_minima, max_value=data_maxima)
         data_fim = st.sidebar.date_input(t['end_date'], value=data_maxima, min_value=data_minima, max_value=data_maxima)
         
         estacoes_disponiveis = sorted(df_analisado['nomeEstacao'].unique().tolist())
         estacoes_selecionadas = st.sidebar.multiselect(t['select_stations'], options=estacoes_disponiveis, default=estacoes_disponiveis)
 
-        if st.sidebar.button(t['btn_explore'], type="primary"):
+        # Botão de Ação Principal (Primary)
+        if st.sidebar.button(t['btn_explore'], type="primary", use_container_width=True):
             if data_inicio > data_fim:
                 st.error(t['error_date'])
             elif not estacoes_selecionadas:
@@ -183,7 +190,10 @@ def main():
                     (df_analisado['nomeEstacao'].isin(estacoes_selecionadas))
                 ]
                 
-                st.header(f"{t['analysis_header']}: {data_inicio} to {data_fim}")
+                st.title(t['page_title'])
+                d_ini_fmt = data_inicio.strftime(t['date_format'])
+                d_fim_fmt = data_fim.strftime(t['date_format'])
+                st.header(f"{t['analysis_header']}: {d_ini_fmt} - {d_fim_fmt}")
 
                 if df_filtrado.empty:
                     st.info(t['no_data'])
@@ -192,7 +202,13 @@ def main():
                     st.success(t['success'].format(num_diags))
                     gerar_diagramas(df_filtrado, t)
         else:
+            st.title(t['page_title'])
             st.info(t['initial_info'])
+
+        # 3. RODAPÉ FIXO (Botão Externo mantendo o padrão Primary)
+        st.sidebar.markdown("---")
+        # Removido o container com borda para manter o padrão limpo do botão original
+        st.sidebar.link_button(f"{t['btn_external']}", "https://riscohoje.streamlit.app/", use_container_width=True, type="primary")
 
     except Exception as e:
         st.error(f"Erro inesperado: {e}")
