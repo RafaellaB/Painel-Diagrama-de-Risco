@@ -205,9 +205,9 @@ def main():
             st.title(t['page_title'])
             st.info(t['initial_info'])
 
-        # 3. RODAPÉ FIXO (Botão Externo mantendo o padrão Primary)
+        
         st.sidebar.markdown("---")
-        # Removido o container com borda para manter o padrão limpo do botão original
+       
         st.sidebar.link_button(f"{t['btn_external']}", "https://riscohoje.streamlit.app/", use_container_width=True, type="primary")
 
     except Exception as e:
