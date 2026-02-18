@@ -1,4 +1,72 @@
 data,hora_ref,nomeEstacao,VP,AM,Nivel_Risco_Valor,Classificacao_Risco
+2026-02-17,23:00:00,Campina do Barreto,0.0,0.39,0.0,Baixo
+2026-02-17,23:00:00,Imbiribeira,0.2,0.39,0.08,Baixo
+2026-02-17,23:00:00,Torreão,0.0,0.39,0.0,Baixo
+2026-02-17,22:00:00,Campina do Barreto,0.0,0.22,0.0,Baixo
+2026-02-17,22:00:00,Imbiribeira,0.2,0.22,0.04,Baixo
+2026-02-17,22:00:00,Torreão,0.0,0.22,0.0,Baixo
+2026-02-17,21:00:00,Campina do Barreto,0.0,0.6,0.0,Baixo
+2026-02-17,21:00:00,Imbiribeira,0.0,0.6,0.0,Baixo
+2026-02-17,21:00:00,Torreão,0.0,0.6,0.0,Baixo
+2026-02-17,20:00:00,Campina do Barreto,0.0,0.97,0.0,Baixo
+2026-02-17,20:00:00,Imbiribeira,0.0,0.97,0.0,Baixo
+2026-02-17,20:00:00,Torreão,0.0,0.97,0.0,Baixo
+2026-02-17,19:00:00,Campina do Barreto,0.0,1.35,0.0,Baixo
+2026-02-17,19:00:00,Imbiribeira,0.0,1.35,0.0,Baixo
+2026-02-17,19:00:00,Torreão,0.0,1.35,0.0,Baixo
+2026-02-17,18:00:00,Campina do Barreto,0.0,1.72,0.0,Baixo
+2026-02-17,18:00:00,Imbiribeira,0.2,1.72,0.34,Baixo
+2026-02-17,18:00:00,Torreão,0.0,1.72,0.0,Baixo
+2026-02-17,17:00:00,Campina do Barreto,0.0,2.1,0.0,Baixo
+2026-02-17,17:00:00,Imbiribeira,0.2,2.1,0.42,Baixo
+2026-02-17,17:00:00,Torreão,0.0,2.1,0.0,Baixo
+2026-02-17,16:00:00,Campina do Barreto,0.0,2.43,0.0,Baixo
+2026-02-17,16:00:00,Imbiribeira,0.0,2.43,0.0,Baixo
+2026-02-17,16:00:00,Torreão,0.0,2.43,0.0,Baixo
+2026-02-17,15:00:00,Campina do Barreto,0.0,2.07,0.0,Baixo
+2026-02-17,15:00:00,Imbiribeira,0.0,2.07,0.0,Baixo
+2026-02-17,15:00:00,Torreão,0.0,2.07,0.0,Baixo
+2026-02-17,14:00:00,Campina do Barreto,0.0,1.71,0.0,Baixo
+2026-02-17,14:00:00,Imbiribeira,0.2,1.71,0.34,Baixo
+2026-02-17,14:00:00,Torreão,0.0,1.71,0.0,Baixo
+2026-02-17,13:00:00,Campina do Barreto,0.0,1.36,0.0,Baixo
+2026-02-17,13:00:00,Imbiribeira,0.2,1.36,0.27,Baixo
+2026-02-17,13:00:00,Torreão,0.0,1.36,0.0,Baixo
+2026-02-17,12:00:00,Campina do Barreto,0.0,1.0,0.0,Baixo
+2026-02-17,12:00:00,Imbiribeira,0.2,1.0,0.2,Baixo
+2026-02-17,12:00:00,Torreão,1.1780742604,1.0,1.18,Baixo
+2026-02-17,11:00:00,Campina do Barreto,0.0,0.64,0.0,Baixo
+2026-02-17,11:00:00,Imbiribeira,0.2,0.64,0.13,Baixo
+2026-02-17,11:00:00,Torreão,1.1780742604,0.64,0.75,Baixo
+2026-02-17,10:00:00,Campina do Barreto,0.7908379331,0.3,0.24,Baixo
+2026-02-17,10:00:00,Imbiribeira,0.0,0.3,0.0,Baixo
+2026-02-17,10:00:00,Torreão,8.246519822800002,0.3,2.47,Baixo
+2026-02-17,09:00:00,Campina do Barreto,0.7908379331,0.61,0.48,Baixo
+2026-02-17,09:00:00,Imbiribeira,0.0,0.61,0.0,Baixo
+2026-02-17,09:00:00,Torreão,0.0,0.61,0.0,Baixo
+2026-02-17,08:00:00,Campina do Barreto,0.0,0.92,0.0,Baixo
+2026-02-17,08:00:00,Imbiribeira,0.2,0.92,0.18,Baixo
+2026-02-17,08:00:00,Torreão,0.0,0.92,0.0,Baixo
+2026-02-17,07:00:00,Campina do Barreto,0.39268,1.22,0.48,Baixo
+2026-02-17,07:00:00,Imbiribeira,0.2,1.22,0.24,Baixo
+2026-02-17,07:00:00,Torreão,1.1817,1.22,1.44,Baixo
+2026-02-17,06:00:00,Campina do Barreto,5.3084757181999995,1.53,8.12,Baixo
+2026-02-17,06:00:00,Imbiribeira,0.0,1.53,0.0,Baixo
+2026-02-17,06:00:00,Torreão,1.1817,1.53,1.81,Baixo
+2026-02-17,05:00:00,Campina do Barreto,8.8462557182,1.84,16.28,Baixo
+2026-02-17,05:00:00,Imbiribeira,0.0,1.84,0.0,Baixo
+2026-02-17,05:00:00,Torreão,2.3817000000000004,1.84,4.38,Baixo
+2026-02-17,04:00:00,Campina do Barreto,7.0719,2.15,15.2,Baixo
+2026-02-17,04:00:00,Imbiribeira,0.2,2.15,0.43,Baixo
+2026-02-17,04:00:00,Torreão,0.0,2.15,0.0,Baixo
+2026-02-17,03:00:00,Imbiribeira,0.2,2.08,0.42,Baixo
+2026-02-17,03:00:00,Torreão,0.0,2.08,0.0,Baixo
+2026-02-17,02:00:00,Imbiribeira,0.0,1.73,0.0,Baixo
+2026-02-17,02:00:00,Torreão,0.0,1.73,0.0,Baixo
+2026-02-17,01:00:00,Imbiribeira,0.0,1.39,0.0,Baixo
+2026-02-17,01:00:00,Torreão,0.0,1.39,0.0,Baixo
+2026-02-17,00:00:00,Imbiribeira,0.0,1.05,0.0,Baixo
+2026-02-17,00:00:00,Torreão,0.0,1.05,0.0,Baixo
 2026-02-16,23:00:00,Imbiribeira,0.0,0.7,0.0,Baixo
 2026-02-16,23:00:00,Torreão,0.0,0.7,0.0,Baixo
 2026-02-16,22:00:00,Imbiribeira,0.2,0.36,0.07,Baixo
