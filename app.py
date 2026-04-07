@@ -21,6 +21,7 @@ LANGUAGES = {
         'error_station': "Please select at least one station.",
         'analysis_header': "Risk Analysis",
         'date_format': "%Y-%m-%d",
+        'input_date_format': "YYYY-MM-DD",
         'locale_str': 'en_US.UTF-8',
         'no_data': "No risk points were found for the selected period and stations.",
         'success': "Analysis complete! Displaying {} diagram(s).",
@@ -48,7 +49,8 @@ LANGUAGES = {
         'error_date': "A data de início não pode ser posterior à data de término.",
         'error_station': "Por favor, selecione pelo menos uma estação.",
         'analysis_header': "Análise de Risco",
-        'date_format': "%d/%m/%Y",
+        'date_format': "%d-%m-%Y",
+        'input_date_format': "DD-MM-YYYY",
         'locale_str': 'pt_BR.UTF-8',
         'no_data': "Nenhum ponto de risco encontrado para o período e estações selecionados.",
         'success': "Análise concluída! Exibindo {} diagrama(s).",
@@ -171,8 +173,21 @@ def main():
         data_minima = df_analisado['data'].min()
         data_maxima = df_analisado['data'].max()
 
-        data_inicio = st.sidebar.date_input(t['start_date'], value=data_minima, min_value=data_minima, max_value=data_maxima)
-        data_fim = st.sidebar.date_input(t['end_date'], value=data_maxima, min_value=data_minima, max_value=data_maxima)
+        # Open the calendar on the latest available date (e.g., 2026) by default.
+        data_inicio = st.sidebar.date_input(
+            t['start_date'],
+            value=data_maxima,
+            min_value=data_minima,
+            max_value=data_maxima,
+            format=t['input_date_format']
+        )
+        data_fim = st.sidebar.date_input(
+            t['end_date'],
+            value=data_maxima,
+            min_value=data_minima,
+            max_value=data_maxima,
+            format=t['input_date_format']
+        )
         
         estacoes_disponiveis = sorted(df_analisado['nomeEstacao'].unique().tolist())
         estacoes_selecionadas = st.sidebar.multiselect(t['select_stations'], options=estacoes_disponiveis, default=estacoes_disponiveis)
