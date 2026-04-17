@@ -1,4 +1,100 @@
 data,hora_ref,nomeEstacao,VP,AM,Nivel_Risco_Valor,Classificacao_Risco
+2026-04-16,23:00:00,Campina do Barreto,0.0,0.76,0.0,Baixo
+2026-04-16,23:00:00,Dois Irmãos,0.0,0.76,0.0,Baixo
+2026-04-16,23:00:00,Imbiribeira,0.0,0.76,0.0,Baixo
+2026-04-16,23:00:00,Torreão,0.0,0.76,0.0,Baixo
+2026-04-16,22:00:00,Campina do Barreto,0.0,0.38,0.0,Baixo
+2026-04-16,22:00:00,Dois Irmãos,0.0,0.38,0.0,Baixo
+2026-04-16,22:00:00,Imbiribeira,0.0,0.38,0.0,Baixo
+2026-04-16,22:00:00,Torreão,0.0,0.38,0.0,Baixo
+2026-04-16,21:00:00,Campina do Barreto,,0.21,,
+2026-04-16,21:00:00,Dois Irmãos,,0.21,,
+2026-04-16,21:00:00,Imbiribeira,0.0,0.21,0.0,Baixo
+2026-04-16,21:00:00,Torreão,,0.21,,
+2026-04-16,20:00:00,Campina do Barreto,0.0,0.6,0.0,Baixo
+2026-04-16,20:00:00,Dois Irmãos,2.74876,0.6,1.65,Baixo
+2026-04-16,20:00:00,Imbiribeira,0.0,0.6,0.0,Baixo
+2026-04-16,20:00:00,Torreão,0.0,0.6,0.0,Baixo
+2026-04-16,19:00:00,Campina do Barreto,0.0,1.0,0.0,Baixo
+2026-04-16,19:00:00,Dois Irmãos,0.0,1.0,0.0,Baixo
+2026-04-16,19:00:00,Imbiribeira,0.0,1.0,0.0,Baixo
+2026-04-16,19:00:00,Torreão,0.0,1.0,0.0,Baixo
+2026-04-16,18:00:00,Campina do Barreto,0.0,1.39,0.0,Baixo
+2026-04-16,18:00:00,Dois Irmãos,0.0,1.39,0.0,Baixo
+2026-04-16,18:00:00,Imbiribeira,0.0,1.39,0.0,Baixo
+2026-04-16,18:00:00,Torreão,0.0,1.39,0.0,Baixo
+2026-04-16,17:00:00,Campina do Barreto,0.0,1.79,0.0,Baixo
+2026-04-16,17:00:00,Dois Irmãos,0.0,1.79,0.0,Baixo
+2026-04-16,17:00:00,Imbiribeira,0.0,1.79,0.0,Baixo
+2026-04-16,17:00:00,Torreão,0.0,1.79,0.0,Baixo
+2026-04-16,16:00:00,Campina do Barreto,0.0,2.18,0.0,Baixo
+2026-04-16,16:00:00,Dois Irmãos,0.0,2.18,0.0,Baixo
+2026-04-16,16:00:00,Imbiribeira,0.0,2.18,0.0,Baixo
+2026-04-16,16:00:00,Torreão,0.0,2.18,0.0,Baixo
+2026-04-16,15:00:00,Campina do Barreto,0.0,2.47,0.0,Baixo
+2026-04-16,15:00:00,Dois Irmãos,0.0,2.47,0.0,Baixo
+2026-04-16,15:00:00,Imbiribeira,0.0,2.47,0.0,Baixo
+2026-04-16,15:00:00,Torreão,0.0,2.47,0.0,Baixo
+2026-04-16,14:00:00,Campina do Barreto,0.0,2.08,0.0,Baixo
+2026-04-16,14:00:00,Dois Irmãos,0.0,2.08,0.0,Baixo
+2026-04-16,14:00:00,Imbiribeira,0.0,2.08,0.0,Baixo
+2026-04-16,14:00:00,Torreão,0.0,2.08,0.0,Baixo
+2026-04-16,13:00:00,Campina do Barreto,0.0,1.7,0.0,Baixo
+2026-04-16,13:00:00,Dois Irmãos,0.0,1.7,0.0,Baixo
+2026-04-16,13:00:00,Imbiribeira,0.0,1.7,0.0,Baixo
+2026-04-16,13:00:00,Torreão,0.0,1.7,0.0,Baixo
+2026-04-16,12:00:00,Campina do Barreto,0.0,1.32,0.0,Baixo
+2026-04-16,12:00:00,Dois Irmãos,0.0,1.32,0.0,Baixo
+2026-04-16,12:00:00,Imbiribeira,0.0,1.32,0.0,Baixo
+2026-04-16,12:00:00,Torreão,0.0,1.32,0.0,Baixo
+2026-04-16,11:00:00,Campina do Barreto,0.0,0.93,0.0,Baixo
+2026-04-16,11:00:00,Dois Irmãos,0.0,0.93,0.0,Baixo
+2026-04-16,11:00:00,Imbiribeira,0.0,0.93,0.0,Baixo
+2026-04-16,11:00:00,Torreão,0.0,0.93,0.0,Baixo
+2026-04-16,10:00:00,Campina do Barreto,6.7136,0.55,3.69,Baixo
+2026-04-16,10:00:00,Dois Irmãos,0.0,0.55,0.0,Baixo
+2026-04-16,10:00:00,Imbiribeira,0.0,0.55,0.0,Baixo
+2026-04-16,10:00:00,Torreão,0.0,0.55,0.0,Baixo
+2026-04-16,09:00:00,Campina do Barreto,6.7136,0.19,1.28,Baixo
+2026-04-16,09:00:00,Dois Irmãos,0.0,0.19,0.0,Baixo
+2026-04-16,09:00:00,Imbiribeira,0.0,0.19,0.0,Baixo
+2026-04-16,09:00:00,Torreão,0.0,0.19,0.0,Baixo
+2026-04-16,08:00:00,Campina do Barreto,26.8544,0.53,14.23,Baixo
+2026-04-16,08:00:00,Dois Irmãos,0.0,0.53,0.0,Baixo
+2026-04-16,08:00:00,Imbiribeira,0.0,0.53,0.0,Baixo
+2026-04-16,08:00:00,Torreão,0.0,0.53,0.0,Baixo
+2026-04-16,07:00:00,Campina do Barreto,0.0,0.86,0.0,Baixo
+2026-04-16,07:00:00,Dois Irmãos,0.2,0.86,0.17,Baixo
+2026-04-16,07:00:00,Imbiribeira,0.0,0.86,0.0,Baixo
+2026-04-16,07:00:00,Torreão,0.0,0.86,0.0,Baixo
+2026-04-16,06:00:00,Campina do Barreto,0.0,1.2,0.0,Baixo
+2026-04-16,06:00:00,Dois Irmãos,1.4000000000000001,1.2,1.68,Baixo
+2026-04-16,06:00:00,Imbiribeira,0.0,1.2,0.0,Baixo
+2026-04-16,06:00:00,Torreão,0.0,1.2,0.0,Baixo
+2026-04-16,05:00:00,Campina do Barreto,0.0,1.53,0.0,Baixo
+2026-04-16,05:00:00,Dois Irmãos,0.0,1.53,0.0,Baixo
+2026-04-16,05:00:00,Imbiribeira,0.0,1.53,0.0,Baixo
+2026-04-16,05:00:00,Torreão,0.0,1.53,0.0,Baixo
+2026-04-16,04:00:00,Campina do Barreto,0.0,1.87,0.0,Baixo
+2026-04-16,04:00:00,Dois Irmãos,0.0,1.87,0.0,Baixo
+2026-04-16,04:00:00,Imbiribeira,0.0,1.87,0.0,Baixo
+2026-04-16,04:00:00,Torreão,0.0,1.87,0.0,Baixo
+2026-04-16,03:00:00,Campina do Barreto,0.2,2.21,0.44,Baixo
+2026-04-16,03:00:00,Dois Irmãos,0.0,2.21,0.0,Baixo
+2026-04-16,03:00:00,Imbiribeira,0.0,2.21,0.0,Baixo
+2026-04-16,03:00:00,Torreão,0.0,2.21,0.0,Baixo
+2026-04-16,02:00:00,Campina do Barreto,0.2,2.14,0.43,Baixo
+2026-04-16,02:00:00,Dois Irmãos,0.0,2.14,0.0,Baixo
+2026-04-16,02:00:00,Imbiribeira,0.0,2.14,0.0,Baixo
+2026-04-16,02:00:00,Torreão,0.0,2.14,0.0,Baixo
+2026-04-16,01:00:00,Campina do Barreto,1.6,1.78,2.85,Baixo
+2026-04-16,01:00:00,Dois Irmãos,0.7872187662,1.78,1.4,Baixo
+2026-04-16,01:00:00,Imbiribeira,0.0,1.78,0.0,Baixo
+2026-04-16,01:00:00,Torreão,0.0,1.78,0.0,Baixo
+2026-04-16,00:00:00,Campina do Barreto,0.2,1.42,0.28,Baixo
+2026-04-16,00:00:00,Dois Irmãos,0.7872187662,1.42,1.12,Baixo
+2026-04-16,00:00:00,Imbiribeira,0.0,1.42,0.0,Baixo
+2026-04-16,00:00:00,Torreão,0.0,1.42,0.0,Baixo
 2026-04-15,23:00:00,Campina do Barreto,8.251923034099999,1.06,8.75,Baixo
 2026-04-15,23:00:00,Dois Irmãos,9.058374710599999,1.06,9.6,Baixo
 2026-04-15,23:00:00,Imbiribeira,0.0,1.06,0.0,Baixo
