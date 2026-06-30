@@ -1,4 +1,79 @@
 data,hora_ref,nomeEstacao,VP,AM,Nivel_Risco_Valor,Classificacao_Risco
+2026-06-29,23:00:00,Campina do Barreto,0.0,0.89,0.0,Baixo
+2026-06-29,23:00:00,Imbiribeira,0.0,0.89,0.0,Baixo
+2026-06-29,23:00:00,Torreão,0.0,0.89,0.0,Baixo
+2026-06-29,22:00:00,Campina do Barreto,,0.63,,
+2026-06-29,22:00:00,Imbiribeira,0.0,0.63,0.0,Baixo
+2026-06-29,22:00:00,Torreão,,0.63,,
+2026-06-29,21:00:00,Campina do Barreto,,0.65,,
+2026-06-29,21:00:00,Imbiribeira,,0.65,,
+2026-06-29,21:00:00,Torreão,0.0,0.65,0.0,Baixo
+2026-06-29,20:00:00,Campina do Barreto,0.0,0.9,0.0,Baixo
+2026-06-29,20:00:00,Imbiribeira,0.2,0.9,0.18,Baixo
+2026-06-29,20:00:00,Torreão,0.0,0.9,0.0,Baixo
+2026-06-29,19:00:00,Campina do Barreto,5.5131252877,1.15,6.34,Baixo
+2026-06-29,19:00:00,Imbiribeira,0.0,1.15,0.0,Baixo
+2026-06-29,19:00:00,Torreão,0.0,1.15,0.0,Baixo
+2026-06-29,18:00:00,Campina do Barreto,5.5131252877,1.41,7.77,Baixo
+2026-06-29,18:00:00,Imbiribeira,0.2,1.41,0.28,Baixo
+2026-06-29,18:00:00,Torreão,0.0,1.41,0.0,Baixo
+2026-06-29,17:00:00,Campina do Barreto,0.0,1.66,0.0,Baixo
+2026-06-29,17:00:00,Imbiribeira,0.2,1.66,0.33,Baixo
+2026-06-29,17:00:00,Torreão,0.0,1.66,0.0,Baixo
+2026-06-29,16:00:00,Campina do Barreto,0.0,1.91,0.0,Baixo
+2026-06-29,16:00:00,Imbiribeira,0.2,1.91,0.38,Baixo
+2026-06-29,16:00:00,Torreão,0.0,1.91,0.0,Baixo
+2026-06-29,15:00:00,Campina do Barreto,0.0,1.93,0.0,Baixo
+2026-06-29,15:00:00,Dois Irmãos,0.0,1.93,0.0,Baixo
+2026-06-29,15:00:00,Imbiribeira,0.2,1.93,0.39,Baixo
+2026-06-29,15:00:00,Torreão,0.0,1.93,0.0,Baixo
+2026-06-29,14:00:00,Campina do Barreto,0.0,1.66,0.0,Baixo
+2026-06-29,14:00:00,Dois Irmãos,0.0,1.66,0.0,Baixo
+2026-06-29,14:00:00,Imbiribeira,1.4000000000000001,1.66,2.32,Baixo
+2026-06-29,14:00:00,Torreão,0.0,1.66,0.0,Baixo
+2026-06-29,13:00:00,Campina do Barreto,0.0,1.39,0.0,Baixo
+2026-06-29,13:00:00,Dois Irmãos,0.0,1.39,0.0,Baixo
+2026-06-29,13:00:00,Imbiribeira,0.0,1.39,0.0,Baixo
+2026-06-29,13:00:00,Torreão,0.0,1.39,0.0,Baixo
+2026-06-29,12:00:00,Campina do Barreto,0.0,1.12,0.0,Baixo
+2026-06-29,12:00:00,Dois Irmãos,0.0,1.12,0.0,Baixo
+2026-06-29,12:00:00,Imbiribeira,0.0,1.12,0.0,Baixo
+2026-06-29,12:00:00,Torreão,0.0,1.12,0.0,Baixo
+2026-06-29,11:00:00,Campina do Barreto,0.0,0.85,0.0,Baixo
+2026-06-29,11:00:00,Dois Irmãos,0.0,0.85,0.0,Baixo
+2026-06-29,11:00:00,Imbiribeira,0.0,0.85,0.0,Baixo
+2026-06-29,11:00:00,Torreão,0.0,0.85,0.0,Baixo
+2026-06-29,10:00:00,Campina do Barreto,0.0,0.58,0.0,Baixo
+2026-06-29,10:00:00,Dois Irmãos,0.0,0.58,0.0,Baixo
+2026-06-29,10:00:00,Imbiribeira,0.0,0.58,0.0,Baixo
+2026-06-29,10:00:00,Torreão,,0.58,,
+2026-06-29,09:00:00,Campina do Barreto,,0.56,,
+2026-06-29,09:00:00,Dois Irmãos,0.0,0.56,0.0,Baixo
+2026-06-29,09:00:00,Imbiribeira,,0.56,,
+2026-06-29,09:00:00,Torreão,0.0,0.56,0.0,Baixo
+2026-06-29,08:00:00,Campina do Barreto,0.0,0.83,0.0,Baixo
+2026-06-29,08:00:00,Imbiribeira,0.0,0.83,0.0,Baixo
+2026-06-29,08:00:00,Torreão,0.0,0.83,0.0,Baixo
+2026-06-29,07:00:00,Campina do Barreto,0.0,1.11,0.0,Baixo
+2026-06-29,07:00:00,Imbiribeira,0.0,1.11,0.0,Baixo
+2026-06-29,07:00:00,Torreão,0.0,1.11,0.0,Baixo
+2026-06-29,06:00:00,Campina do Barreto,0.0,1.38,0.0,Baixo
+2026-06-29,06:00:00,Imbiribeira,0.0,1.38,0.0,Baixo
+2026-06-29,06:00:00,Torreão,,1.38,,
+2026-06-29,05:00:00,Campina do Barreto,,1.65,,
+2026-06-29,05:00:00,Imbiribeira,,1.65,,
+2026-06-29,05:00:00,Torreão,,1.65,,
+2026-06-29,04:00:00,Campina do Barreto,,1.93,,
+2026-06-29,04:00:00,Imbiribeira,,1.93,,
+2026-06-29,04:00:00,Torreão,0.0,1.93,0.0,Baixo
+2026-06-29,03:00:00,Campina do Barreto,0.2,2.08,0.42,Baixo
+2026-06-29,03:00:00,Imbiribeira,0.0,2.08,0.0,Baixo
+2026-06-29,03:00:00,Torreão,0.0,2.08,0.0,Baixo
+2026-06-29,02:00:00,Campina do Barreto,0.0,1.82,0.0,Baixo
+2026-06-29,02:00:00,Imbiribeira,0.0,1.82,0.0,Baixo
+2026-06-29,02:00:00,Torreão,0.0,1.82,0.0,Baixo
+2026-06-29,01:00:00,Campina do Barreto,0.0,1.56,0.0,Baixo
+2026-06-29,01:00:00,Imbiribeira,0.0,1.56,0.0,Baixo
 2026-06-28,23:00:00,Torreão,0.0,1.03,0.0,Baixo
 2026-06-28,22:00:00,Campina do Barreto,0.0,0.77,0.0,Baixo
 2026-06-28,22:00:00,Imbiribeira,0.0,0.77,0.0,Baixo
