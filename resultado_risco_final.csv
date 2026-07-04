@@ -1,4 +1,75 @@
 data,hora_ref,nomeEstacao,VP,AM,Nivel_Risco_Valor,Classificacao_Risco
+2026-07-03,23:00:00,Campina do Barreto,14.5740070214,0.85,12.39,Baixo
+2026-07-03,23:00:00,Imbiribeira,0.2,0.85,0.17,Baixo
+2026-07-03,22:00:00,Campina do Barreto,,1.1,,
+2026-07-03,22:00:00,Imbiribeira,,1.1,,
+2026-07-03,22:00:00,Torreão,0.0,1.1,0.0,Baixo
+2026-07-03,21:00:00,Campina do Barreto,0.0,1.35,0.0,Baixo
+2026-07-03,21:00:00,Imbiribeira,0.0,1.35,0.0,Baixo
+2026-07-03,21:00:00,Torreão,0.0,1.35,0.0,Baixo
+2026-07-03,20:00:00,Campina do Barreto,0.0,1.6,0.0,Baixo
+2026-07-03,20:00:00,Imbiribeira,0.0,1.6,0.0,Baixo
+2026-07-03,20:00:00,Torreão,0.0,1.6,0.0,Baixo
+2026-07-03,19:00:00,Campina do Barreto,0.0,1.85,0.0,Baixo
+2026-07-03,19:00:00,Imbiribeira,0.0,1.85,0.0,Baixo
+2026-07-03,19:00:00,Torreão,0.0,1.85,0.0,Baixo
+2026-07-03,18:00:00,Campina do Barreto,0.0,2.0,0.0,Baixo
+2026-07-03,18:00:00,Imbiribeira,0.0,2.0,0.0,Baixo
+2026-07-03,18:00:00,Torreão,0.0,2.0,0.0,Baixo
+2026-07-03,17:00:00,Campina do Barreto,0.0,1.73,0.0,Baixo
+2026-07-03,17:00:00,Imbiribeira,0.0,1.73,0.0,Baixo
+2026-07-03,17:00:00,Torreão,0.0,1.73,0.0,Baixo
+2026-07-03,16:00:00,Campina do Barreto,0.0,1.46,0.0,Baixo
+2026-07-03,16:00:00,Imbiribeira,0.0,1.46,0.0,Baixo
+2026-07-03,16:00:00,Torreão,0.0,1.46,0.0,Baixo
+2026-07-03,15:00:00,Campina do Barreto,0.0,1.19,0.0,Baixo
+2026-07-03,15:00:00,Imbiribeira,0.0,1.19,0.0,Baixo
+2026-07-03,15:00:00,Torreão,0.0,1.19,0.0,Baixo
+2026-07-03,14:00:00,Campina do Barreto,0.0,0.92,0.0,Baixo
+2026-07-03,14:00:00,Imbiribeira,0.0,0.92,0.0,Baixo
+2026-07-03,14:00:00,Torreão,0.0,0.92,0.0,Baixo
+2026-07-03,13:00:00,Campina do Barreto,0.0,0.64,0.0,Baixo
+2026-07-03,13:00:00,Imbiribeira,0.0,0.64,0.0,Baixo
+2026-07-03,13:00:00,Torreão,0.0,0.64,0.0,Baixo
+2026-07-03,12:00:00,Campina do Barreto,0.0,0.41,0.0,Baixo
+2026-07-03,12:00:00,Imbiribeira,0.0,0.41,0.0,Baixo
+2026-07-03,12:00:00,Torreão,0.59268,0.41,0.24,Baixo
+2026-07-03,11:00:00,Campina do Barreto,0.2,0.68,0.14,Baixo
+2026-07-03,11:00:00,Imbiribeira,0.0,0.68,0.0,Baixo
+2026-07-03,11:00:00,Torreão,1.7775459321999998,0.68,1.21,Baixo
+2026-07-03,10:00:00,Campina do Barreto,0.79268,0.96,0.76,Baixo
+2026-07-03,10:00:00,Imbiribeira,0.0,0.96,0.0,Baixo
+2026-07-03,10:00:00,Torreão,2.9775459322,0.96,2.86,Baixo
+2026-07-03,09:00:00,Campina do Barreto,1.9926800000000002,1.24,2.47,Baixo
+2026-07-03,09:00:00,Imbiribeira,0.2,1.24,0.25,Baixo
+2026-07-03,09:00:00,Torreão,1.4000000000000001,1.24,1.74,Baixo
+2026-07-03,08:00:00,Campina do Barreto,1.6,1.52,2.43,Baixo
+2026-07-03,08:00:00,Dois Irmãos,1.4000000000000001,1.52,2.13,Baixo
+2026-07-03,08:00:00,Imbiribeira,0.2,1.52,0.3,Baixo
+2026-07-03,08:00:00,Torreão,0.0,1.52,0.0,Baixo
+2026-07-03,07:00:00,Campina do Barreto,1.4000000000000001,1.79,2.51,Baixo
+2026-07-03,07:00:00,Imbiribeira,0.0,1.79,0.0,Baixo
+2026-07-03,07:00:00,Torreão,0.0,1.79,0.0,Baixo
+2026-07-03,06:00:00,Campina do Barreto,0.4,2.07,0.83,Baixo
+2026-07-03,06:00:00,Imbiribeira,0.0,2.07,0.0,Baixo
+2026-07-03,06:00:00,Torreão,0.4,2.07,0.83,Baixo
+2026-07-03,05:00:00,Campina do Barreto,0.6000000000000001,2.05,1.23,Baixo
+2026-07-03,05:00:00,Imbiribeira,0.0,2.05,0.0,Baixo
+2026-07-03,05:00:00,Torreão,1.6,2.05,3.28,Baixo
+2026-07-03,04:00:00,Campina do Barreto,1.6,1.78,2.85,Baixo
+2026-07-03,04:00:00,Imbiribeira,0.0,1.78,0.0,Baixo
+2026-07-03,04:00:00,Torreão,1.4000000000000001,1.78,2.49,Baixo
+2026-07-03,03:00:00,Campina do Barreto,,1.5,,
+2026-07-03,03:00:00,Imbiribeira,0.0,1.5,0.0,Baixo
+2026-07-03,03:00:00,Torreão,0.0,1.5,0.0,Baixo
+2026-07-03,02:00:00,Campina do Barreto,0.0,1.23,0.0,Baixo
+2026-07-03,02:00:00,Imbiribeira,0.0,1.23,0.0,Baixo
+2026-07-03,02:00:00,Torreão,0.0,1.23,0.0,Baixo
+2026-07-03,01:00:00,Campina do Barreto,0.0,0.95,0.0,Baixo
+2026-07-03,01:00:00,Imbiribeira,0.0,0.95,0.0,Baixo
+2026-07-03,01:00:00,Torreão,0.0,0.95,0.0,Baixo
+2026-07-03,00:00:00,Campina do Barreto,0.0,0.68,0.0,Baixo
+2026-07-03,00:00:00,Imbiribeira,0.0,0.68,0.0,Baixo
 2026-07-02,23:00:00,Torreão,0.0,0.61,0.0,Baixo
 2026-07-02,22:00:00,Campina do Barreto,0.0,0.88,0.0,Baixo
 2026-07-02,22:00:00,Imbiribeira,0.0,0.88,0.0,Baixo
