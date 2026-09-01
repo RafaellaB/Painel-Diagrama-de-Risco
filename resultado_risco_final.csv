@@ -1,4 +1,56 @@
 data,hora_ref,nomeEstacao,VP,AM,Nivel_Risco_Valor,Classificacao_Risco
+2026-08-31,22:00:00,Torreão,0.0,0.9,0.0,Baixo
+2026-08-31,21:00:00,Imbiribeira,0.0,1.2,0.0,Baixo
+2026-08-31,21:00:00,Torreão,0.0,1.2,0.0,Baixo
+2026-08-31,20:00:00,Imbiribeira,0.0,1.51,0.0,Baixo
+2026-08-31,20:00:00,Torreão,0.0,1.51,0.0,Baixo
+2026-08-31,19:00:00,Imbiribeira,0.0,1.81,0.0,Baixo
+2026-08-31,19:00:00,Torreão,0.0,1.81,0.0,Baixo
+2026-08-31,18:00:00,Imbiribeira,0.0,2.11,0.0,Baixo
+2026-08-31,18:00:00,Torreão,0.0,2.11,0.0,Baixo
+2026-08-31,17:00:00,Imbiribeira,0.0,2.04,0.0,Baixo
+2026-08-31,17:00:00,Torreão,0.0,2.04,0.0,Baixo
+2026-08-31,16:00:00,Imbiribeira,0.0,1.71,0.0,Baixo
+2026-08-31,16:00:00,Torreão,0.0,1.71,0.0,Baixo
+2026-08-31,15:00:00,Imbiribeira,,1.39,,
+2026-08-31,15:00:00,Torreão,,1.39,,
+2026-08-31,14:00:00,Imbiribeira,,1.06,,
+2026-08-31,14:00:00,Torreão,0.0,1.06,0.0,Baixo
+2026-08-31,13:00:00,Campina do Barreto,0.0,0.74,0.0,Baixo
+2026-08-31,13:00:00,Dois Irmãos,0.0,0.74,0.0,Baixo
+2026-08-31,13:00:00,Imbiribeira,0.0,0.74,0.0,Baixo
+2026-08-31,13:00:00,Torreão,0.0,0.74,0.0,Baixo
+2026-08-31,12:00:00,Campina do Barreto,0.0,0.42,0.0,Baixo
+2026-08-31,12:00:00,Dois Irmãos,0.0,0.42,0.0,Baixo
+2026-08-31,12:00:00,Imbiribeira,0.0,0.42,0.0,Baixo
+2026-08-31,12:00:00,Torreão,0.0,0.42,0.0,Baixo
+2026-08-31,11:00:00,Campina do Barreto,0.0,0.42,0.0,Baixo
+2026-08-31,11:00:00,Dois Irmãos,0.0,0.42,0.0,Baixo
+2026-08-31,11:00:00,Imbiribeira,0.0,0.42,0.0,Baixo
+2026-08-31,11:00:00,Torreão,,0.42,,
+2026-08-31,10:00:00,Campina do Barreto,,0.78,,
+2026-08-31,10:00:00,Imbiribeira,,0.78,,
+2026-08-31,10:00:00,Torreão,,0.78,,
+2026-08-31,09:00:00,Campina do Barreto,,1.14,,
+2026-08-31,09:00:00,Imbiribeira,,1.14,,
+2026-08-31,09:00:00,Torreão,,1.14,,
+2026-08-31,08:00:00,Campina do Barreto,,1.49,,
+2026-08-31,08:00:00,Imbiribeira,,1.49,,
+2026-08-31,08:00:00,Torreão,,1.49,,
+2026-08-31,07:00:00,Campina do Barreto,,1.85,,
+2026-08-31,07:00:00,Imbiribeira,,1.85,,
+2026-08-31,07:00:00,Torreão,,1.85,,
+2026-08-31,06:00:00,Campina do Barreto,,2.21,,
+2026-08-31,06:00:00,Imbiribeira,,2.21,,
+2026-08-31,06:00:00,Torreão,0.0,2.21,0.0,Baixo
+2026-08-31,05:00:00,Campina do Barreto,0.0,2.28,0.0,Baixo
+2026-08-31,05:00:00,Imbiribeira,3.1422709377,2.28,7.16,Baixo
+2026-08-31,05:00:00,Torreão,0.0,2.28,0.0,Baixo
+2026-08-31,04:00:00,Campina do Barreto,0.0,1.93,0.0,Baixo
+2026-08-31,04:00:00,Imbiribeira,0.0,1.93,0.0,Baixo
+2026-08-31,04:00:00,Torreão,0.0,1.93,0.0,Baixo
+2026-08-31,03:00:00,Campina do Barreto,0.0,1.57,0.0,Baixo
+2026-08-31,03:00:00,Imbiribeira,0.0,1.57,0.0,Baixo
 2026-08-30,23:00:00,Campina do Barreto,0.0,0.32,0.0,Baixo
 2026-08-30,23:00:00,Imbiribeira,0.0,0.32,0.0,Baixo
 2026-08-30,23:00:00,Torreão,0.0,0.32,0.0,Baixo
