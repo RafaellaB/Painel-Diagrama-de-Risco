@@ -1,4 +1,48 @@
 data,hora_ref,nomeEstacao,VP,AM,Nivel_Risco_Valor,Classificacao_Risco
+2026-09-26,21:00:00,Campina do Barreto,0.0,0.35,0.0,Baixo
+2026-09-26,20:00:00,Campina do Barreto,0.0,0.71,0.0,Baixo
+2026-09-26,20:00:00,Imbiribeira,0.0,0.71,0.0,Baixo
+2026-09-26,19:00:00,Campina do Barreto,0.0,1.08,0.0,Baixo
+2026-09-26,19:00:00,Imbiribeira,0.0,1.08,0.0,Baixo
+2026-09-26,18:00:00,Campina do Barreto,0.0,1.44,0.0,Baixo
+2026-09-26,18:00:00,Imbiribeira,0.0,1.44,0.0,Baixo
+2026-09-26,17:00:00,Campina do Barreto,0.0,1.8,0.0,Baixo
+2026-09-26,17:00:00,Imbiribeira,0.0,1.8,0.0,Baixo
+2026-09-26,16:00:00,Campina do Barreto,0.0,2.17,0.0,Baixo
+2026-09-26,16:00:00,Imbiribeira,0.0,2.17,0.0,Baixo
+2026-09-26,15:00:00,Campina do Barreto,0.0,2.22,0.0,Baixo
+2026-09-26,15:00:00,Imbiribeira,0.0,2.22,0.0,Baixo
+2026-09-26,14:00:00,Campina do Barreto,0.0,1.85,0.0,Baixo
+2026-09-26,14:00:00,Dois Irmãos,0.0,1.85,0.0,Baixo
+2026-09-26,14:00:00,Imbiribeira,0.0,1.85,0.0,Baixo
+2026-09-26,13:00:00,Campina do Barreto,0.0,1.48,0.0,Baixo
+2026-09-26,13:00:00,Dois Irmãos,0.0,1.48,0.0,Baixo
+2026-09-26,13:00:00,Imbiribeira,0.2,1.48,0.3,Baixo
+2026-09-26,12:00:00,Campina do Barreto,0.0,1.11,0.0,Baixo
+2026-09-26,12:00:00,Dois Irmãos,0.0,1.11,0.0,Baixo
+2026-09-26,12:00:00,Imbiribeira,0.2,1.11,0.22,Baixo
+2026-09-26,11:00:00,Campina do Barreto,0.0,0.74,0.0,Baixo
+2026-09-26,11:00:00,Dois Irmãos,0.0,0.74,0.0,Baixo
+2026-09-26,11:00:00,Imbiribeira,0.0,0.74,0.0,Baixo
+2026-09-26,10:00:00,Campina do Barreto,,0.37,,
+2026-09-26,10:00:00,Imbiribeira,0.0,0.37,0.0,Baixo
+2026-09-26,09:00:00,Campina do Barreto,0.0,0.26,0.0,Baixo
+2026-09-26,09:00:00,Imbiribeira,,0.26,,
+2026-09-26,08:00:00,Campina do Barreto,0.0,0.63,0.0,Baixo
+2026-09-26,08:00:00,Imbiribeira,0.0,0.63,0.0,Baixo
+2026-09-26,07:00:00,Campina do Barreto,0.0,1.01,0.0,Baixo
+2026-09-26,07:00:00,Imbiribeira,0.0,1.01,0.0,Baixo
+2026-09-26,06:00:00,Campina do Barreto,0.0,1.38,0.0,Baixo
+2026-09-26,06:00:00,Imbiribeira,0.0,1.38,0.0,Baixo
+2026-09-26,05:00:00,Campina do Barreto,,1.76,,
+2026-09-26,05:00:00,Imbiribeira,,1.76,,
+2026-09-26,04:00:00,Campina do Barreto,0.0,2.14,0.0,Baixo
+2026-09-26,04:00:00,Imbiribeira,,2.14,,
+2026-09-26,03:00:00,Campina do Barreto,0.0,2.37,0.0,Baixo
+2026-09-26,03:00:00,Imbiribeira,0.0,2.37,0.0,Baixo
+2026-09-26,02:00:00,Campina do Barreto,0.0,2.01,0.0,Baixo
+2026-09-26,02:00:00,Imbiribeira,0.0,2.01,0.0,Baixo
+2026-09-26,01:00:00,Imbiribeira,0.0,1.65,0.0,Baixo
 2026-09-25,22:00:00,Campina do Barreto,0.0,0.58,0.0,Baixo
 2026-09-25,22:00:00,Imbiribeira,0.0,0.58,0.0,Baixo
 2026-09-25,21:00:00,Campina do Barreto,0.0,0.32,0.0,Baixo
