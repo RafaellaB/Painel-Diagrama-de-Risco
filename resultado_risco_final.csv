@@ -1,4 +1,26 @@
 data,hora_ref,nomeEstacao,VP,AM,Nivel_Risco_Valor,Classificacao_Risco
+2026-10-02,14:00:00,Dois Irmãos,0.0,0.88,0.0,Baixo
+2026-10-02,13:00:00,Dois Irmãos,0.0,0.9,0.0,Baixo
+2026-10-02,10:00:00,RECIFE - APAC,0.0,1.45,0.0,Baixo
+2026-10-02,09:00:00,RECIFE - APAC,0.0,1.63,0.0,Baixo
+2026-10-02,08:00:00,Campina do Barreto,0.0,1.81,0.0,Baixo
+2026-10-02,08:00:00,RECIFE - APAC,0.0,1.81,0.0,Baixo
+2026-10-02,07:00:00,Campina do Barreto,0.0,1.78,0.0,Baixo
+2026-10-02,07:00:00,RECIFE - APAC,0.0,1.78,0.0,Baixo
+2026-10-02,07:00:00,Torreão,0.0,1.78,0.0,Baixo
+2026-10-02,06:00:00,Campina do Barreto,,1.57,,
+2026-10-02,06:00:00,RECIFE - APAC,,1.57,,
+2026-10-02,05:00:00,Campina do Barreto,,1.35,,
+2026-10-02,05:00:00,RECIFE - APAC,,1.35,,
+2026-10-02,04:00:00,Campina do Barreto,,1.13,,
+2026-10-02,04:00:00,RECIFE - APAC,,1.13,,
+2026-10-02,03:00:00,Campina do Barreto,,0.91,,
+2026-10-02,03:00:00,RECIFE - APAC,,0.91,,
+2026-10-02,02:00:00,Campina do Barreto,,0.69,,
+2026-10-02,02:00:00,RECIFE - APAC,,0.69,,
+2026-10-02,01:00:00,Campina do Barreto,,0.6,,
+2026-10-02,01:00:00,RECIFE - APAC,0.0,0.6,0.0,Baixo
+2026-10-02,00:00:00,Campina do Barreto,0.0,0.84,0.0,Baixo
 2026-10-01,21:00:00,Campina do Barreto,0.0,1.56,0.0,Baixo
 2026-10-01,21:00:00,RECIFE - APAC,0.0,1.56,0.0,Baixo
 2026-10-01,20:00:00,Campina do Barreto,0.0,1.8,0.0,Baixo
