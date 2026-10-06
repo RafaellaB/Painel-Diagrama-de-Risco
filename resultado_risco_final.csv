@@ -1,4 +1,10 @@
 data,hora_ref,nomeEstacao,VP,AM,Nivel_Risco_Valor,Classificacao_Risco
+2026-10-05,15:00:00,Dois Irmãos,0.0,1.32,0.0,Baixo
+2026-10-05,15:00:00,Torreão,0.0,1.32,0.0,Baixo
+2026-10-05,14:00:00,Dois Irmãos,0.0,1.5,0.0,Baixo
+2026-10-05,14:00:00,Torreão,0.0,1.5,0.0,Baixo
+2026-10-05,13:00:00,Dois Irmãos,0.0,1.67,0.0,Baixo
+2026-10-05,13:00:00,Torreão,0.0,1.67,0.0,Baixo
 2026-10-04,15:00:00,Dois Irmãos,0.0,1.16,0.0,Baixo
 2026-10-04,15:00:00,Torreão,0.0,1.16,0.0,Baixo
 2026-10-04,14:00:00,Dois Irmãos,0.0,1.29,0.0,Baixo
