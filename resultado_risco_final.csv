@@ -1,4 +1,25 @@
 data,hora_ref,nomeEstacao,VP,AM,Nivel_Risco_Valor,Classificacao_Risco
+2026-10-10,17:00:00,Dois Irmãos,0.0,1.77,0.0,Baixo
+2026-10-10,17:00:00,Imbiribeira,0.0,1.77,0.0,Baixo
+2026-10-10,16:00:00,Dois Irmãos,0.0,2.13,0.0,Baixo
+2026-10-10,16:00:00,Imbiribeira,0.0,2.13,0.0,Baixo
+2026-10-10,15:00:00,Dois Irmãos,0.0,2.2,0.0,Baixo
+2026-10-10,15:00:00,Imbiribeira,0.0,2.2,0.0,Baixo
+2026-10-10,15:00:00,Torreão,0.0,2.2,0.0,Baixo
+2026-10-10,14:00:00,Dois Irmãos,0.0,1.84,0.0,Baixo
+2026-10-10,14:00:00,Imbiribeira,0.0,1.84,0.0,Baixo
+2026-10-10,14:00:00,Torreão,0.0,1.84,0.0,Baixo
+2026-10-10,13:00:00,Dois Irmãos,,1.49,,
+2026-10-10,13:00:00,Imbiribeira,0.0,1.49,0.0,Baixo
+2026-10-10,13:00:00,Torreão,,1.49,,
+2026-10-10,12:00:00,Dois Irmãos,,1.13,,
+2026-10-10,12:00:00,Imbiribeira,,1.13,,
+2026-10-10,12:00:00,Torreão,0.0,1.13,0.0,Baixo
+2026-10-10,11:00:00,Dois Irmãos,0.0,0.78,0.0,Baixo
+2026-10-10,11:00:00,Imbiribeira,0.0,0.78,0.0,Baixo
+2026-10-10,11:00:00,Torreão,0.0,0.78,0.0,Baixo
+2026-10-10,10:00:00,Torreão,0.0,0.42,0.0,Baixo
+2026-10-10,09:00:00,Torreão,0.0,0.34,0.0,Baixo
 2026-10-09,18:00:00,Dois Irmãos,0.0,1.28,0.0,Baixo
 2026-10-09,17:00:00,Dois Irmãos,,1.62,,
 2026-10-09,16:00:00,Dois Irmãos,0.0,1.96,0.0,Baixo
