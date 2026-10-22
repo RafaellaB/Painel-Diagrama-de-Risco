@@ -1,4 +1,41 @@
 data,hora_ref,nomeEstacao,VP,AM,Nivel_Risco_Valor,Classificacao_Risco
+2026-10-21,21:00:00,Campina do Barreto,0.0,1.24,0.0,Baixo
+2026-10-21,20:00:00,Campina do Barreto,0.0,1.04,0.0,Baixo
+2026-10-21,20:00:00,Dois Irmãos,4.123139999999999,1.04,4.29,Baixo
+2026-10-21,19:00:00,Campina do Barreto,0.0,0.83,0.0,Baixo
+2026-10-21,19:00:00,Dois Irmãos,0.0,0.83,0.0,Baixo
+2026-10-21,18:00:00,Campina do Barreto,0.0,0.83,0.0,Baixo
+2026-10-21,18:00:00,Dois Irmãos,0.0,0.83,0.0,Baixo
+2026-10-21,17:00:00,Campina do Barreto,0.0,1.01,0.0,Baixo
+2026-10-21,17:00:00,Dois Irmãos,0.0,1.01,0.0,Baixo
+2026-10-21,16:00:00,Campina do Barreto,0.0,1.19,0.0,Baixo
+2026-10-21,16:00:00,Dois Irmãos,0.0,1.19,0.0,Baixo
+2026-10-21,15:00:00,Campina do Barreto,0.0,1.37,0.0,Baixo
+2026-10-21,15:00:00,Dois Irmãos,0.0,1.37,0.0,Baixo
+2026-10-21,15:00:00,Torreão,0.0,1.37,0.0,Baixo
+2026-10-21,14:00:00,Campina do Barreto,0.0,1.55,0.0,Baixo
+2026-10-21,14:00:00,Dois Irmãos,0.0,1.55,0.0,Baixo
+2026-10-21,14:00:00,Torreão,0.0,1.55,0.0,Baixo
+2026-10-21,13:00:00,Campina do Barreto,,1.73,,
+2026-10-21,13:00:00,Dois Irmãos,,1.73,,
+2026-10-21,13:00:00,Torreão,,1.73,,
+2026-10-21,12:00:00,Campina do Barreto,0.0,1.77,0.0,Baixo
+2026-10-21,12:00:00,Dois Irmãos,0.0,1.77,0.0,Baixo
+2026-10-21,12:00:00,Torreão,0.2,1.77,0.35,Baixo
+2026-10-21,11:00:00,Campina do Barreto,0.0,1.57,0.0,Baixo
+2026-10-21,11:00:00,Imbiribeira,0.0,1.57,0.0,Baixo
+2026-10-21,11:00:00,Torreão,0.2,1.57,0.31,Baixo
+2026-10-21,10:00:00,Campina do Barreto,0.0,1.38,0.0,Baixo
+2026-10-21,10:00:00,Torreão,1.4000000000000001,1.38,1.93,Baixo
+2026-10-21,09:00:00,Campina do Barreto,,1.18,,
+2026-10-21,08:00:00,Campina do Barreto,,0.99,,
+2026-10-21,07:00:00,Campina do Barreto,18.1235409507,0.8,14.5,Baixo
+2026-10-21,06:00:00,Campina do Barreto,1.4000000000000001,0.75,1.05,Baixo
+2026-10-21,05:00:00,Campina do Barreto,0.0,0.93,0.0,Baixo
+2026-10-21,04:00:00,Campina do Barreto,0.0,1.11,0.0,Baixo
+2026-10-21,03:00:00,Campina do Barreto,,1.28,,
+2026-10-21,02:00:00,Campina do Barreto,3.1512970996,1.46,4.6,Baixo
+2026-10-21,01:00:00,Campina do Barreto,1.4000000000000001,1.64,2.3,Baixo
 2026-10-20,20:00:00,Dois Irmãos,0.0,1.18,0.0,Baixo
 2026-10-20,19:00:00,Dois Irmãos,0.0,1.03,0.0,Baixo
 2026-10-20,18:00:00,Dois Irmãos,0.0,0.89,0.0,Baixo
